@@ -1,0 +1,2169 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: windowHandling.spec.js >> window Handling
+- Location: tests\windowHandling.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f4e2]:
+  - navigation "Shortcuts menu" [ref=f4e3]:
+    - heading "Skip to" [level=2] [ref=f4e4]
+    - list "Skip to" [ref=f4e5]:
+      - listitem [ref=f4e6]:
+        - link "main content" [ref=f4e7] [cursor=pointer]:
+          - /url: "#skippedLink"
+          - text: Main content
+      - listitem [ref=f4e8]:
+        - link "Results" [ref=f4e9] [cursor=pointer]:
+          - /url: .s-asin a:has(h2)
+    - separator [ref=f4e10]
+    - heading "Keyboard shortcuts" [level=2] [ref=f4e11]
+    - list "Keyboard shortcuts" [ref=f4e12]:
+      - listitem [ref=f4e13]:
+        - link "Search, alt, forward slash" [ref=f4e14] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=f4e15]:
+            - generic [ref=f4e16]: Search
+            - generic [ref=f4e17]:
+              - generic [ref=f4e18]: alt
+              - generic [ref=f4e19]: +
+              - generic [ref=f4e20]: /
+      - listitem [ref=f4e21]:
+        - link "Cart, shift, alt, c" [ref=f4e22] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=f4e23]:
+            - generic [ref=f4e24]: Cart
+            - generic [ref=f4e25]:
+              - generic [ref=f4e26]: shift
+              - generic [ref=f4e27]: +
+              - generic [ref=f4e28]: alt
+              - generic [ref=f4e29]: +
+              - generic [ref=f4e30]: C
+      - listitem [ref=f4e31]:
+        - link "Home, shift, alt, h" [ref=f4e32] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=f4e33]:
+            - generic [ref=f4e34]: Home
+            - generic [ref=f4e35]:
+              - generic [ref=f4e36]: shift
+              - generic [ref=f4e37]: +
+              - generic [ref=f4e38]: alt
+              - generic [ref=f4e39]: +
+              - generic [ref=f4e40]: H
+      - listitem [ref=f4e41]:
+        - link "Your orders, shift, alt, o" [ref=f4e42] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=f4e43]:
+            - generic [ref=f4e44]: Orders
+            - generic [ref=f4e45]:
+              - generic [ref=f4e46]: shift
+              - generic [ref=f4e47]: +
+              - generic [ref=f4e48]: alt
+              - generic [ref=f4e49]: +
+              - generic [ref=f4e50]: O
+      - listitem [ref=f4e51]:
+        - button "Show/hide shortcuts, shift, alt, z" [ref=f4e52] [cursor=pointer]:
+          - generic [ref=f4e53]:
+            - generic [ref=f4e54]: Show/Hide shortcuts
+            - generic [ref=f4e55]:
+              - generic [ref=f4e56]: shift
+              - generic [ref=f4e57]: +
+              - generic [ref=f4e58]: alt
+              - generic [ref=f4e59]: +
+              - generic [ref=f4e60]: Z
+    - generic [ref=f4e61]: To move between items, use your keyboard's up or down arrows.
+  - banner [ref=f4e67]:
+    - navigation "Primary" [ref=f4e68]:
+      - generic [ref=f4e69]:
+        - generic [ref=f4e70]:
+          - link "Amazon.in" [ref=f4e72] [cursor=pointer]:
+            - /url: /ref=nav_logo
+            - generic: .in
+          - button "Delivering to Chennai 600009 Update location" [ref=f4e75] [cursor=pointer]:
+            - generic [ref=f4e77]:
+              - generic [ref=f4e78]: Delivering to Chennai 600009
+              - generic [ref=f4e79]: Update location
+        - search [ref=f4e82]:
+          - generic [ref=f4e85]:
+            - generic [ref=f4e86]: All
+            - combobox "Select the department you want to search in" [ref=f4e89] [cursor=pointer]:
+              - option "All Categories" [selected]
+              - option "Alexa Skills"
+              - option "Amazon Devices"
+              - option "Amazon Fashion"
+              - option "Amazon Fresh"
+              - option "Amazon Fresh Meat"
+              - option "Amazon Pharmacy"
+              - option "Appliances"
+              - option "Apps & Games"
+              - option "Audible Audiobooks"
+              - option "Baby"
+              - option "Beauty"
+              - option "Books"
+              - option "Car & Motorbike"
+              - option "Clothing & Accessories"
+              - option "Collectibles"
+              - option "Computers & Accessories"
+              - option "Deals"
+              - option "Electronics"
+              - option "Furniture"
+              - option "Garden & Outdoors"
+              - option "Gift Cards"
+              - option "Grocery & Gourmet Foods"
+              - option "Health & Personal Care"
+              - option "Home & Kitchen"
+              - option "Industrial & Scientific"
+              - option "Jewellery"
+              - option "Kindle Store"
+              - option "Luggage & Bags"
+              - option "Luxury Beauty"
+              - option "Movies & TV Shows"
+              - option "MP3 Music"
+              - option "Music"
+              - option "Musical Instruments"
+              - option "Office Products"
+              - option "Pet Supplies"
+              - option "Prime Video"
+              - option "Shoes & Handbags"
+              - option "Software"
+              - option "Sports, Fitness & Outdoors"
+              - option "Subscribe & Save"
+              - option "Tools & Home Improvement"
+              - option "Toys & Games"
+              - option "Under ₹500"
+              - option "Video Games"
+              - option "Watches"
+          - searchbox "Search Amazon.in" [ref=f4e92]: iphone 17 pro
+          - generic "Go" [ref=f4e95] [cursor=pointer]:
+            - button "Go" [ref=f4e96]
+        - generic [ref=f4e98]:
+          - generic [ref=f4e99]:
+            - link "Choose a language for shopping in Amazon India. The current selection is English (EN)." [ref=f4e100] [cursor=pointer]:
+              - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+              - generic [ref=f4e103]:
+                - img "India" [ref=f4e104]
+                - generic [ref=f4e105]: EN
+            - button "Expand to Change Language or Country" [ref=f4e106] [cursor=pointer]
+          - generic [ref=f4e107]:
+            - link "Hello, sign in Account & Lists" [ref=f4e108] [cursor=pointer]:
+              - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%3Fk%3Diphone%2B17%2Bpro%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+              - generic [ref=f4e109]: Hello, sign in
+              - generic [ref=f4e111]: Account & Lists
+            - button "Expand Account and Lists" [ref=f4e112] [cursor=pointer]
+          - link "Returns & Orders" [ref=f4e113] [cursor=pointer]:
+            - /url: /gp/css/order-history?ref_=nav_orders_first
+            - generic [ref=f4e114]: Returns
+            - generic [ref=f4e115]: "& Orders"
+          - link "0 items in cart" [ref=f4e116] [cursor=pointer]:
+            - /url: /gp/cart/view.html?ref_=nav_cart
+            - generic [ref=f4e117]: "0"
+            - generic [ref=f4e120]: Cart
+      - generic [ref=f4e122]:
+        - button "Open All Categories Menu" [ref=f4e124] [cursor=pointer]:
+          - generic [ref=f4e126]: All
+        - list [ref=f4e130]:
+          - listitem [ref=f4e131]:
+            - generic [ref=f4e132]:
+              - link "Fresh" [ref=f4e133] [cursor=pointer]:
+                - /url: /fresh?ref_=nav_cs_grocery
+              - button "Fresh Details" [ref=f4e134] [cursor=pointer]
+          - listitem [ref=f4e135]:
+            - link "Prime Video" [ref=f4e137] [cursor=pointer]:
+              - /url: https://www.primevideo.com/offers/nonprimehomepage/ref_=nav_dvm_crs_in_s_gw_bt_dk_p_hamburgr?ref_=avod_desktop_topnav
+          - listitem [ref=f4e138]:
+            - link "Sell" [ref=f4e140] [cursor=pointer]:
+              - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+          - listitem [ref=f4e141]:
+            - link "Bestsellers" [ref=f4e143] [cursor=pointer]:
+              - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+          - listitem [ref=f4e144]:
+            - link "Today's Deals" [ref=f4e146] [cursor=pointer]:
+              - /url: /deals?ref_=nav_cs_gb
+          - listitem [ref=f4e147]:
+            - link "Mobiles" [ref=f4e149] [cursor=pointer]:
+              - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+          - listitem [ref=f4e150]:
+            - link "Customer Service" [ref=f4e152] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+          - listitem [ref=f4e153]:
+            - link "New Releases" [ref=f4e155] [cursor=pointer]:
+              - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+          - listitem [ref=f4e156]:
+            - generic [ref=f4e157]:
+              - link "Prime" [ref=f4e158] [cursor=pointer]:
+                - /url: /prime?ref_=nav_cs_primelink_nonmember
+              - button "Prime Details" [ref=f4e159] [cursor=pointer]
+          - listitem [ref=f4e160]:
+            - link "Amazon Pay" [ref=f4e162] [cursor=pointer]:
+              - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+          - listitem [ref=f4e163]:
+            - link "Electronics" [ref=f4e165] [cursor=pointer]:
+              - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+          - listitem [ref=f4e166]:
+            - link "Home & Kitchen" [ref=f4e168] [cursor=pointer]:
+              - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+          - listitem [ref=f4e169]:
+            - link "Fashion" [ref=f4e171] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+          - listitem [ref=f4e172]:
+            - link "Gift Cards" [ref=f4e174] [cursor=pointer]:
+              - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+          - listitem [ref=f4e175]:
+            - link "Beauty & Personal Care" [ref=f4e177] [cursor=pointer]:
+              - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+          - listitem [ref=f4e178]:
+            - link "Computers" [ref=f4e180] [cursor=pointer]:
+              - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+          - listitem [ref=f4e181]:
+            - link "Toys & Games" [ref=f4e183] [cursor=pointer]:
+              - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+          - listitem [ref=f4e184]:
+            - link "Home Improvement" [ref=f4e186] [cursor=pointer]:
+              - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+          - listitem [ref=f4e187]:
+            - link "Car & Motorbike" [ref=f4e189] [cursor=pointer]:
+              - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+          - listitem [ref=f4e190]:
+            - link "Sports, Fitness & Outdoors" [ref=f4e192] [cursor=pointer]:
+              - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+          - listitem [ref=f4e193]:
+            - link "Grocery & Gourmet Foods" [ref=f4e195] [cursor=pointer]:
+              - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+          - listitem [ref=f4e196]:
+            - link "Video Games" [ref=f4e198] [cursor=pointer]:
+              - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+          - listitem [ref=f4e199]:
+            - link "Custom Products" [ref=f4e201] [cursor=pointer]:
+              - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+          - listitem [ref=f4e202]:
+            - link "Health, Household & Personal Care" [ref=f4e204] [cursor=pointer]:
+              - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+          - listitem [ref=f4e205]:
+            - link "Pet Supplies" [ref=f4e207] [cursor=pointer]:
+              - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+          - listitem [ref=f4e208]:
+            - link "Baby" [ref=f4e210] [cursor=pointer]:
+              - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+          - listitem [ref=f4e211]:
+            - link "Audible" [ref=f4e213] [cursor=pointer]:
+              - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+          - listitem [ref=f4e214]:
+            - link "AmazonBasics" [ref=f4e216] [cursor=pointer]:
+              - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+          - listitem [ref=f4e217]:
+            - link "Subscribe & Save" [ref=f4e219] [cursor=pointer]:
+              - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+          - listitem [ref=f4e220]:
+            - link "Amazon Pharmacy" [ref=f4e222] [cursor=pointer]:
+              - /url: /medical/browse/home?ref_=nav_navx-desco-pharma
+          - listitem [ref=f4e223]:
+            - link "Kindle eBooks" [ref=f4e225] [cursor=pointer]:
+              - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+          - listitem [ref=f4e226]:
+            - link "Flights" [ref=f4e228] [cursor=pointer]:
+              - /url: /flights?ref_=nav_cs_apay_desktop_topnav_flights
+      - dialog [ref=f4e231]
+  - generic [ref=f4e233]:
+    - heading [level=1] [ref=f4e236]:
+      - generic [ref=f4e237]:
+        - heading "1-16 of over 50,000 results for \"iphone 17 pro\"" [level=2] [ref=f4e242]
+        - generic [ref=f4e247]:
+          - generic [ref=f4e248]: "Sort by:"
+          - combobox "Sort by:" [ref=f4e249]:
+            - option "Featured" [selected]
+            - 'option "Price: Low to High"'
+            - 'option "Price: High to Low"'
+            - option "Avg. Customer Review"
+            - option "Newest Arrivals"
+            - option "Best Sellers"
+          - generic [ref=f4e250] [cursor=pointer]: Sort by:Featured
+    - generic [ref=f4e254]:
+      - generic [ref=f4e256]:
+        - generic [ref=f4e258]:
+          - generic [ref=f4e260]:
+            - generic [ref=f4e263]:
+              - heading "Results" [level=2] [ref=f4e264]
+              - generic [ref=f4e265]: Check each product page for other buying options.
+            - generic:
+              - list:
+                - listitem [ref=f4e266]:
+                  - generic [ref=f4e274]:
+                    - link [ref=f4e280] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo2ODY4NjA1NTUyNDk2NjU1OjE3ODk2MTg0MDE6c3BfYXRmOjMwMDcxNDEyOTAyNDkzMjo6MDo6&url=%2FiPhone-17-256-Promotion-Resistance%2Fdp%2FB0FQFYXCC4%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg%26dib_tag%3Dse%26keywords%3Diphone%2B17%2Bpro%26qid%3D1789618401%26sr%3D8-1-spons%26aref%3DQlhdadoZ1e%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=QlhdadoZ1e&sp_cr=ZAZ
+                    - generic [ref=f4e285]:
+                      - generic [ref=f4e286]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e289] [cursor=pointer]:
+                          - generic [ref=f4e290]: Sponsored
+                        - heading "Apple" [level=2] [ref=f4e294]
+                        - link [ref=f4e295] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo2ODY4NjA1NTUyNDk2NjU1OjE3ODk2MTg0MDE6c3BfYXRmOjMwMDcxNDEyOTAyNDkzMjo6MDo6&url=%2FiPhone-17-256-Promotion-Resistance%2Fdp%2FB0FQFYXCC4%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg%26dib_tag%3Dse%26keywords%3Diphone%2B17%2Bpro%26qid%3D1789618401%26sr%3D8-1-spons%26aref%3DQlhdadoZ1e%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=QlhdadoZ1e&sp_cr=ZAZ
+                          - 'heading "Sponsored Ad - iPhone 17 256 GB: 15.93 cm (6.3″) Display with Promotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Black" [level=2] [ref=f4e296]': "iPhone 17 256 GB: 15.93 cm (6.3″) Display with Promotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Black"
+                      - generic [ref=f4e297]:
+                        - generic [ref=f4e298]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=f4e300] [cursor=pointer]:
+                            - generic [ref=f4e301]: 4.6 out of 5 stars
+                          - link "673 ratings" [ref=f4e304] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo2ODY4NjA1NTUyNDk2NjU1OjE3ODk2MTg0MDE6c3BfYXRmOjMwMDcxNDEyOTAyNDkzMjo6MDo6&url=%2FiPhone-17-256-Promotion-Resistance%2Fdp%2FB0FQFYXCC4%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg%26dib_tag%3Dse%26keywords%3Diphone%2B17%2Bpro%26qid%3D1789618401%26sr%3D8-1-spons%26aref%3DQlhdadoZ1e%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=QlhdadoZ1e&sp_cr=ZAZ#customerReviews
+                            - text: (673)
+                        - generic [ref=f4e305]: 5K+ bought in past month
+                      - generic [ref=f4e308]:
+                        - generic [ref=f4e309]:
+                          - generic [ref=f4e311]:
+                            - generic [ref=f4e312]: Price, product page
+                            - link "₹99,900" [ref=f4e313] [cursor=pointer]:
+                              - /url: /sspa/click?ie=UTF8&spc=MTo2ODY4NjA1NTUyNDk2NjU1OjE3ODk2MTg0MDE6c3BfYXRmOjMwMDcxNDEyOTAyNDkzMjo6MDo6&url=%2FiPhone-17-256-Promotion-Resistance%2Fdp%2FB0FQFYXCC4%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg%26dib_tag%3Dse%26keywords%3Diphone%2B17%2Bpro%26qid%3D1789618401%26sr%3D8-1-spons%26aref%3DQlhdadoZ1e%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=QlhdadoZ1e&sp_cr=ZAZ
+                              - generic [ref=f4e314]:
+                                - generic [ref=f4e315]: ₹99,900
+                                - generic [ref=f4e316]: ₹99,900
+                          - generic [ref=f4e320]:
+                            - generic [ref=f4e321]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=f4e322]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=f4e323]: FREE delivery 19 Sept - 1 Oct
+                        - generic [ref=f4e341] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e342]
+                          - generic [ref=f4e343]: Add to cart
+                        - group "colours available" [ref=f4e345]:
+                          - list
+                          - link "+1 other color/pattern" [ref=f4e347] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo2ODY4NjA1NTUyNDk2NjU1OjE3ODk2MTg0MDE6c3BfYXRmOjMwMDcxNDEyOTAyNDkzMjo6MDo6&url=%2FiPhone-17-256-Promotion-Resistance%2Fdp%2FB0FQFYXCC4%2Fref%3Dsr_1_1_sspa%3Fdib%3DeyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg%26dib_tag%3Dse%26keywords%3Diphone%2B17%2Bpro%26qid%3D1789618401%26sr%3D8-1-spons%26aref%3DQlhdadoZ1e%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=QlhdadoZ1e&sp_cr=ZAZ
+                - listitem [ref=f4e350]:
+                  - generic [ref=f4e358]:
+                    - link [ref=f4e364] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MTo2ODY4NjA1NTUyNDk2NjU1OjE3ODk2MTg0MDE6c3BfYXRmOjMwMDcxNDEyOTAyMjUzMjo6MDo6&url=%2FiPhone-Air-TB-Thinnest-Promotion%2Fdp%2FB0FQG1TPG9%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg%26dib_tag%3Dse%26keywords%3Diphone%2B17%2Bpro%26qid%3D1789618401%26sr%3D8-2-spons%26aref%3DrSM0kVIOtr%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=rSM0kVIOtr&sp_cr=ZAZ
+                    - generic [ref=f4e369]:
+                      - generic [ref=f4e370]:
+                        - button "View Sponsored information or leave ad feedback" [ref=f4e373] [cursor=pointer]:
+                          - generic [ref=f4e374]: Sponsored
+                        - heading "Apple" [level=2] [ref=f4e378]
+                        - link [ref=f4e379] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo2ODY4NjA1NTUyNDk2NjU1OjE3ODk2MTg0MDE6c3BfYXRmOjMwMDcxNDEyOTAyMjUzMjo6MDo6&url=%2FiPhone-Air-TB-Thinnest-Promotion%2Fdp%2FB0FQG1TPG9%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg%26dib_tag%3Dse%26keywords%3Diphone%2B17%2Bpro%26qid%3D1789618401%26sr%3D8-2-spons%26aref%3DrSM0kVIOtr%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=rSM0kVIOtr&sp_cr=ZAZ
+                          - 'heading "Sponsored Ad - iPhone Air 1 TB: Thinnest iPhone Ever, 16.63 cm (6.5″) Display with Promotion up to 120Hz, Powerful A19 Pro Chip, Center Stage Front Camera, All-Day Battery Life; Sky Blue" [level=2] [ref=f4e380]': "iPhone Air 1 TB: Thinnest iPhone Ever, 16.63 cm (6.5″) Display with Promotion up to 120Hz, Powerful A19 Pro Chip, Center Stage Front Camera, All-Day Battery Life; Sky Blue"
+                      - generic [ref=f4e382]:
+                        - text: "4.5"
+                        - button "4.5 out of 5 stars, rating details" [ref=f4e384] [cursor=pointer]:
+                          - generic [ref=f4e385]: 4.5 out of 5 stars
+                        - link "364 ratings" [ref=f4e388] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MTo2ODY4NjA1NTUyNDk2NjU1OjE3ODk2MTg0MDE6c3BfYXRmOjMwMDcxNDEyOTAyMjUzMjo6MDo6&url=%2FiPhone-Air-TB-Thinnest-Promotion%2Fdp%2FB0FQG1TPG9%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg%26dib_tag%3Dse%26keywords%3Diphone%2B17%2Bpro%26qid%3D1789618401%26sr%3D8-2-spons%26aref%3DrSM0kVIOtr%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=rSM0kVIOtr&sp_cr=ZAZ#customerReviews
+                          - text: (364)
+                      - generic [ref=f4e391]:
+                        - generic [ref=f4e392]:
+                          - generic [ref=f4e394]:
+                            - generic [ref=f4e395]: Price, product page
+                            - link "₹2,24,900" [ref=f4e396] [cursor=pointer]:
+                              - /url: /sspa/click?ie=UTF8&spc=MTo2ODY4NjA1NTUyNDk2NjU1OjE3ODk2MTg0MDE6c3BfYXRmOjMwMDcxNDEyOTAyMjUzMjo6MDo6&url=%2FiPhone-Air-TB-Thinnest-Promotion%2Fdp%2FB0FQG1TPG9%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg%26dib_tag%3Dse%26keywords%3Diphone%2B17%2Bpro%26qid%3D1789618401%26sr%3D8-2-spons%26aref%3DrSM0kVIOtr%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=rSM0kVIOtr&sp_cr=ZAZ
+                              - generic [ref=f4e397]:
+                                - generic [ref=f4e398]: ₹2,24,900
+                                - generic [ref=f4e399]: ₹2,24,900
+                          - generic [ref=f4e403]:
+                            - generic [ref=f4e404]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=f4e405]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=f4e406]: FREE delivery Sat, 19 Sept
+                        - generic [ref=f4e424] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e425]
+                          - generic [ref=f4e426]: Add to cart
+                        - group "colours available" [ref=f4e428]:
+                          - list
+                          - link "+3 other colors/patterns" [ref=f4e430] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MTo2ODY4NjA1NTUyNDk2NjU1OjE3ODk2MTg0MDE6c3BfYXRmOjMwMDcxNDEyOTAyMjUzMjo6MDo6&url=%2FiPhone-Air-TB-Thinnest-Promotion%2Fdp%2FB0FQG1TPG9%2Fref%3Dsr_1_2_sspa%3Fdib%3DeyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg%26dib_tag%3Dse%26keywords%3Diphone%2B17%2Bpro%26qid%3D1789618401%26sr%3D8-2-spons%26aref%3DrSM0kVIOtr%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1&aref=rSM0kVIOtr&sp_cr=ZAZ
+                - listitem [ref=f4e433]:
+                  - generic [ref=f4e439]:
+                    - link [ref=f4e445] [cursor=pointer]:
+                      - /url: /iPhone-18-Pro-512-GB/dp/B0HJB77H4Y/ref=sr_1_3?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-3
+                    - generic [ref=f4e450]:
+                      - generic [ref=f4e451]:
+                        - link [ref=f4e452] [cursor=pointer]:
+                          - /url: /iPhone-18-Pro-512-GB/dp/B0HJB77H4Y/ref=sr_1_3?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-3
+                          - heading "iPhone 18 Pro (512 GB) - Black" [level=2] [ref=f4e453]
+                        - generic "15.93 cm (6.3″) Super Retina XDR Display with ProMotion, A20 Pro Chip, 48MP Fusion Main Camera with Variable Aperture" [ref=f4e455]
+                      - generic [ref=f4e458]:
+                        - generic [ref=f4e459]:
+                          - generic [ref=f4e461]:
+                            - generic [ref=f4e462]: Price, product page
+                            - link "₹1,89,900" [ref=f4e463] [cursor=pointer]:
+                              - /url: /iPhone-18-Pro-512-GB/dp/B0HJB77H4Y/ref=sr_1_3?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-3
+                              - generic [ref=f4e464]:
+                                - generic [ref=f4e465]: ₹1,89,900
+                                - generic [ref=f4e466]: ₹1,89,900
+                          - generic [ref=f4e470]:
+                            - generic [ref=f4e471]: Flat INR 750 Off on Select Bank Cards
+                            - generic [ref=f4e472]: Flat INR 750 Off on Select Bank Cards
+                        - generic [ref=f4e473]:
+                          - generic [ref=f4e474]: FREE delivery 20 - 28 Sept
+                          - generic "This item will be released on September 19, 2026." [ref=f4e479]
+                        - generic [ref=f4e493] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e494]
+                          - generic [ref=f4e495]: Add to cart
+                - listitem [ref=f4e498]:
+                  - generic [ref=f4e504]:
+                    - link [ref=f4e510] [cursor=pointer]:
+                      - /url: /iPhone-17-256-Promotion-Resistance/dp/B0FQFYXCC4/ref=sr_1_4?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-4
+                    - generic [ref=f4e515]:
+                      - generic [ref=f4e516]:
+                        - heading "Apple" [level=2] [ref=f4e519]
+                        - link [ref=f4e520] [cursor=pointer]:
+                          - /url: /iPhone-17-256-Promotion-Resistance/dp/B0FQFYXCC4/ref=sr_1_4?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-4
+                          - 'heading "iPhone 17 256 GB: 15.93 cm (6.3″) Display with Promotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Black" [level=2] [ref=f4e521]'
+                      - generic [ref=f4e522]:
+                        - generic [ref=f4e523]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=f4e525] [cursor=pointer]:
+                            - generic [ref=f4e526]: 4.6 out of 5 stars
+                          - link "673 ratings" [ref=f4e529] [cursor=pointer]:
+                            - /url: /iPhone-17-256-Promotion-Resistance/dp/B0FQFYXCC4/ref=sr_1_4?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-4#customerReviews
+                            - text: (673)
+                        - generic [ref=f4e530]: 5K+ bought in past month
+                      - generic [ref=f4e533]:
+                        - generic [ref=f4e534]:
+                          - generic [ref=f4e536]:
+                            - generic [ref=f4e537]: Price, product page
+                            - link "₹99,900" [ref=f4e538] [cursor=pointer]:
+                              - /url: /iPhone-17-256-Promotion-Resistance/dp/B0FQFYXCC4/ref=sr_1_4?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-4
+                              - generic [ref=f4e539]:
+                                - generic [ref=f4e540]: ₹99,900
+                                - generic [ref=f4e541]: ₹99,900
+                          - generic [ref=f4e545]:
+                            - generic [ref=f4e546]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=f4e547]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=f4e548]: FREE delivery 19 Sept - 1 Oct
+                        - generic [ref=f4e566] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e567]
+                          - generic [ref=f4e568]: Add to cart
+                        - group "colours available" [ref=f4e570]:
+                          - list [ref=f4e571]:
+                            - generic [ref=f4e572]:
+                              - listitem:
+                                - link "Black":
+                                  - /url: /iPhone-17-256-Promotion-Resistance/dp/B0FQFYXCC4/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-4
+                                  - generic [ref=f4e573] [cursor=pointer]
+                            - generic [ref=f4e575]:
+                              - listitem:
+                                - link "Lavender":
+                                  - /url: /iPhone-17-256-Promotion-Resistance/dp/B0G6L35VWQ/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-4
+                                  - generic [ref=f4e576] [cursor=pointer]
+                - listitem [ref=f4e580]:
+                  - generic [ref=f4e586]:
+                    - link [ref=f4e592] [cursor=pointer]:
+                      - /url: /Samsung-Smartphone-Titanium-Snapdragon-ProVisual/dp/B0DSKMV3ZC/ref=sr_1_5?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-5
+                    - generic [ref=f4e597]:
+                      - generic [ref=f4e598]:
+                        - heading "Samsung" [level=2] [ref=f4e601]
+                        - link [ref=f4e602] [cursor=pointer]:
+                          - /url: /Samsung-Smartphone-Titanium-Snapdragon-ProVisual/dp/B0DSKMV3ZC/ref=sr_1_5?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-5
+                          - heading "Galaxy S25 Ultra 5G AI Smartphone (Titanium Gray, 12GB RAM, 256GB Storage), 200MP Camera, 5000mAh Ultra Long Battery, QHD+ Dynamic AMOLED 2X, Galaxy AI, Knox Security, S Pen Included" [level=2] [ref=f4e603]
+                      - generic [ref=f4e605]:
+                        - text: "4.5"
+                        - button "4.5 out of 5 stars, rating details" [ref=f4e607] [cursor=pointer]:
+                          - generic [ref=f4e608]: 4.5 out of 5 stars
+                        - link "2,195 ratings" [ref=f4e611] [cursor=pointer]:
+                          - /url: /Samsung-Smartphone-Titanium-Snapdragon-ProVisual/dp/B0DSKMV3ZC/ref=sr_1_5?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-5#customerReviews
+                          - text: (2.1K)
+                      - generic [ref=f4e614]:
+                        - generic [ref=f4e615]:
+                          - generic [ref=f4e617]:
+                            - generic [ref=f4e618]: Price, product page
+                            - 'link "₹99,999 M.R.P: ₹1,29,999 M.R.P: ₹1,29,999" [ref=f4e619] [cursor=pointer]':
+                              - /url: /Samsung-Smartphone-Titanium-Snapdragon-ProVisual/dp/B0DSKMV3ZC/ref=sr_1_5?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-5
+                              - generic [ref=f4e620]:
+                                - generic [ref=f4e621]: ₹99,999
+                                - generic [ref=f4e622]: ₹99,999
+                              - generic [ref=f4e623]: "M.R.P: ₹1,29,999"
+                              - generic [ref=f4e624]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e625]:
+                                  - generic [ref=f4e626]: ₹1,29,999
+                                  - text: ₹1,29,999
+                            - text: (23% off)
+                          - generic [ref=f4e630]:
+                            - generic [ref=f4e631]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=f4e632]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=f4e635]:
+                          - generic [ref=f4e636]: FREE delivery Sat, 19 Sept
+                          - generic [ref=f4e638]: Or fastest delivery Today 2 pm - 6 pm
+                        - generic [ref=f4e653] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e654]
+                          - generic [ref=f4e655]: Add to cart
+                        - group "colours available" [ref=f4e657]:
+                          - list [ref=f4e658]:
+                            - generic [ref=f4e659]:
+                              - listitem:
+                                - link "Titanium Gray":
+                                  - /url: /Samsung-Smartphone-Titanium-Snapdragon-ProVisual/dp/B0DSKMV3ZC/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-5
+                                  - generic [ref=f4e660] [cursor=pointer]
+                            - generic [ref=f4e662]:
+                              - listitem:
+                                - link "Titanium Silverblue":
+                                  - /url: /Samsung-Smartphone-Titanium-Snapdragon-ProVisual/dp/B0DVC72DF8/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-5
+                                  - generic [ref=f4e663] [cursor=pointer]
+                            - generic [ref=f4e665]:
+                              - listitem:
+                                - link "Titanium Whitesilver":
+                                  - /url: /Samsung-Smartphone-Titanium-Snapdragon-ProVisual/dp/B0DSKL9MQ8/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-5
+                                  - generic [ref=f4e666] [cursor=pointer]
+          - generic [ref=f4e673]:
+            - generic [ref=f4e678]:
+              - heading "Trending now" [level=2] [ref=f4e680]
+              - button "View Sponsored information or leave ad feedback" [ref=f4e683] [cursor=pointer]: Sponsored
+            - region "Trending now" [ref=f4e685]:
+              - list [ref=f4e691]:
+                - listitem "1 of 5" [ref=f4e692]:
+                  - generic [ref=f4e698]:
+                    - link [ref=f4e701] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxNDEyOTAyNDkzMjo6MDo6&url=%2FiPhone-17-256-Promotion-Resistance%2Fdp%2FB0FQFYXCC4%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0FQFYXCC4%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DQlhdadoZ1e%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=QlhdadoZ1e&sp_cr=ZAZ
+                    - generic [ref=f4e704]:
+                      - group "colours available" [ref=f4e706]:
+                        - list
+                        - link "+1 other color/pattern" [ref=f4e708] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxNDEyOTAyNDkzMjo6MDo6&url=%2FiPhone-17-256-Promotion-Resistance%2Fdp%2FB0FQFYXCC4%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0FQFYXCC4%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DQlhdadoZ1e%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=QlhdadoZ1e&sp_cr=ZAZ
+                      - link [ref=f4e710] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxNDEyOTAyNDkzMjo6MDo6&url=%2FiPhone-17-256-Promotion-Resistance%2Fdp%2FB0FQFYXCC4%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0FQFYXCC4%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DQlhdadoZ1e%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=QlhdadoZ1e&sp_cr=ZAZ
+                        - 'heading "Sponsored Ad - Apple iPhone 17 256 GB: 15.93 cm (6.3″) Display with Promotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Black" [level=2] [ref=f4e711]': "Apple iPhone 17 256 GB: 15.93 cm (6.3″) Display with Promotion, A19 Chip, Center Stage Front Camera for Smarter Group Selfies, Improved Scratch Resistance, All-Day Battery Life; Black"
+                      - generic [ref=f4e712]:
+                        - generic [ref=f4e713]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=f4e715] [cursor=pointer]:
+                            - generic [ref=f4e716]: 4.6 out of 5 stars
+                          - link "673 ratings" [ref=f4e719] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxNDEyOTAyNDkzMjo6MDo6&url=%2FiPhone-17-256-Promotion-Resistance%2Fdp%2FB0FQFYXCC4%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0FQFYXCC4%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DQlhdadoZ1e%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=QlhdadoZ1e&sp_cr=ZAZ#customerReviews
+                            - text: (673)
+                        - generic [ref=f4e720]: 5K+ bought in past month
+                      - generic [ref=f4e721]:
+                        - generic [ref=f4e723]:
+                          - generic [ref=f4e724]: Price, product page
+                          - link "₹99,900" [ref=f4e725] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxNDEyOTAyNDkzMjo6MDo6&url=%2FiPhone-17-256-Promotion-Resistance%2Fdp%2FB0FQFYXCC4%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0FQFYXCC4%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-1-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DQlhdadoZ1e%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=QlhdadoZ1e&sp_cr=ZAZ
+                            - generic [ref=f4e726]:
+                              - generic [ref=f4e727]: ₹99,900
+                              - generic [ref=f4e728]: ₹99,900
+                        - generic [ref=f4e732]:
+                          - generic [ref=f4e733]: Up to 5% back with Amazon Pay ICICI card
+                          - generic [ref=f4e734]: Up to 5% back with Amazon Pay...
+                      - generic [ref=f4e735]: FREE delivery 19 Sept - 1 Oct
+                      - generic [ref=f4e754] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e755]
+                        - generic [ref=f4e756]: Add to cart
+                - listitem "2 of 5" [ref=f4e757]:
+                  - generic [ref=f4e763]:
+                    - link [ref=f4e766] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxNDEyOTAyMTYzMjo6MTo6&url=%2FiPhone-Air-256-GB-Promotion%2Fdp%2FB0FQFTV1NP%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0FQFTV1NP%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DpmVX5S0nlx%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=pmVX5S0nlx&sp_cr=ZAZ
+                    - generic [ref=f4e769]:
+                      - group "colours available" [ref=f4e771]:
+                        - list
+                        - link "+3 other colors/patterns" [ref=f4e773] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxNDEyOTAyMTYzMjo6MTo6&url=%2FiPhone-Air-256-GB-Promotion%2Fdp%2FB0FQFTV1NP%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0FQFTV1NP%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DpmVX5S0nlx%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=pmVX5S0nlx&sp_cr=ZAZ
+                      - link [ref=f4e775] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxNDEyOTAyMTYzMjo6MTo6&url=%2FiPhone-Air-256-GB-Promotion%2Fdp%2FB0FQFTV1NP%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0FQFTV1NP%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DpmVX5S0nlx%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=pmVX5S0nlx&sp_cr=ZAZ
+                        - 'heading "Sponsored Ad - Apple iPhone Air 256 GB: Thinnest iPhone Ever, 16.63 cm (6.5″) Display with Promotion up to 120Hz, Powerful A19 Pro Chip, Center Stage Front Camera, All-Day Battery Life; Light Gold" [level=2] [ref=f4e776]': "Apple iPhone Air 256 GB: Thinnest iPhone Ever, 16.63 cm (6.5″) Display with Promotion up to 120Hz, Powerful A19 Pro Chip, Center Stage Front Camera, All-Day Battery Life; Light Gold"
+                      - generic [ref=f4e777]:
+                        - generic [ref=f4e778]:
+                          - text: "4.5"
+                          - button "4.5 out of 5 stars, rating details" [ref=f4e780] [cursor=pointer]:
+                            - generic [ref=f4e781]: 4.5 out of 5 stars
+                          - link "364 ratings" [ref=f4e784] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxNDEyOTAyMTYzMjo6MTo6&url=%2FiPhone-Air-256-GB-Promotion%2Fdp%2FB0FQFTV1NP%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0FQFTV1NP%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DpmVX5S0nlx%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=pmVX5S0nlx&sp_cr=ZAZ#customerReviews
+                            - text: (364)
+                        - generic [ref=f4e785]: 300+ bought in past month
+                      - generic [ref=f4e786]:
+                        - generic [ref=f4e788]:
+                          - generic [ref=f4e789]: Price, product page
+                          - link "₹1,49,900" [ref=f4e790] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDcxNDEyOTAyMTYzMjo6MTo6&url=%2FiPhone-Air-256-GB-Promotion%2Fdp%2FB0FQFTV1NP%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0FQFTV1NP%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-2-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DpmVX5S0nlx%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=pmVX5S0nlx&sp_cr=ZAZ
+                            - generic [ref=f4e791]:
+                              - generic [ref=f4e792]: ₹1,49,900
+                              - generic [ref=f4e793]: ₹1,49,900
+                        - generic [ref=f4e797]:
+                          - generic [ref=f4e798]: Save extra with No Cost EMI
+                          - generic [ref=f4e799]: Save extra with No Cost EMI
+                      - generic [ref=f4e800]: FREE delivery 19 Sept - 2 Oct
+                      - generic [ref=f4e819] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e820]
+                        - generic [ref=f4e821]: Add to cart
+                - listitem "3 of 5" [ref=f4e822]:
+                  - generic [ref=f4e828]:
+                    - link [ref=f4e831] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTAyNzE0MTQ0MDAzMjo6Mjo6&url=%2FOnePlus-Snapdragon-Segments-Complete-Personalized%2Fdp%2FB0GRB5C1HW%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0GRB5C1HW%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DqrUamGvuUd%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=qrUamGvuUd&sp_cr=ZAZ
+                    - generic [ref=f4e834]:
+                      - group "colours available" [ref=f4e836]:
+                        - list
+                        - link "+2 other colors/patterns" [ref=f4e838] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTAyNzE0MTQ0MDAzMjo6Mjo6&url=%2FOnePlus-Snapdragon-Segments-Complete-Personalized%2Fdp%2FB0GRB5C1HW%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0GRB5C1HW%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DqrUamGvuUd%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=qrUamGvuUd&sp_cr=ZAZ
+                      - link [ref=f4e840] [cursor=pointer]:
+                        - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTAyNzE0MTQ0MDAzMjo6Mjo6&url=%2FOnePlus-Snapdragon-Segments-Complete-Personalized%2Fdp%2FB0GRB5C1HW%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0GRB5C1HW%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DqrUamGvuUd%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=qrUamGvuUd&sp_cr=ZAZ
+                        - heading "Sponsored Ad - OnePlus Nord 6 | 8GB+256GB | Quick Silver | Snapdragon 8s Gen 4 | Segment's First Stable 165FPS Gaming | Segment's Largest 9000mAh Battery | Most Complete IP Rating | Personalized AI" [level=2] [ref=f4e841]: OnePlus Nord 6 | 8GB+256GB | Quick Silver | Snapdragon 8s Gen 4 | Segment's First Stable 165FPS Gaming | Segment's Largest 9000mAh Battery | Most Complete IP Rating | Personalized AI
+                      - generic [ref=f4e842]:
+                        - generic [ref=f4e843]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=f4e845] [cursor=pointer]:
+                            - generic [ref=f4e846]: 4.3 out of 5 stars
+                          - link "2,200 ratings" [ref=f4e849] [cursor=pointer]:
+                            - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTAyNzE0MTQ0MDAzMjo6Mjo6&url=%2FOnePlus-Snapdragon-Segments-Complete-Personalized%2Fdp%2FB0GRB5C1HW%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0GRB5C1HW%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DqrUamGvuUd%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=qrUamGvuUd&sp_cr=ZAZ#customerReviews
+                            - text: (2.2K)
+                        - generic [ref=f4e850]: 1K+ bought in past month
+                      - generic [ref=f4e851]:
+                        - generic [ref=f4e853]:
+                          - generic [ref=f4e854]: Price, product page
+                          - 'link "₹46,999 M.R.P: ₹52,999 M.R.P: ₹52,999" [ref=f4e855] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTAyNzE0MTQ0MDAzMjo6Mjo6&url=%2FOnePlus-Snapdragon-Segments-Complete-Personalized%2Fdp%2FB0GRB5C1HW%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0GRB5C1HW%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-3-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DqrUamGvuUd%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=qrUamGvuUd&sp_cr=ZAZ
+                            - generic [ref=f4e856]:
+                              - generic [ref=f4e857]: ₹46,999
+                              - generic [ref=f4e858]: ₹46,999
+                            - generic [ref=f4e859]: "M.R.P: ₹52,999"
+                            - generic [ref=f4e860]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e861]:
+                                - generic [ref=f4e862]: ₹52,999
+                                - text: ₹52,999
+                          - text: (11% off)
+                        - generic [ref=f4e866]:
+                          - generic [ref=f4e867]: Flat INR 500 Off on Select Bank Cards
+                          - generic [ref=f4e868]: Flat INR 500 Off on Select Bank C...
+                      - generic [ref=f4e872]:
+                        - generic [ref=f4e873]: FREE delivery Sat, 19 Sept
+                        - generic [ref=f4e875]: Or fastest delivery Today
+                      - generic [ref=f4e890] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e891]
+                        - generic [ref=f4e892]: Add to cart
+                - listitem "4 of 5" [ref=f4e893]:
+                  - generic [ref=f4e899]:
+                    - link [ref=f4e902] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTMzNTY1ODg3MjAzMjo6Mzo6&url=%2Frealme-16x-Smartphone-128GB-White%2Fdp%2FB0HD17SRMD%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0HD17SRMD%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DANQZdTZ3md%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=ANQZdTZ3md&sp_cr=ZAZ
+                    - generic [ref=f4e905]:
+                      - generic [ref=f4e906]:
+                        - link [ref=f4e907] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTMzNTY1ODg3MjAzMjo6Mzo6&url=%2Frealme-16x-Smartphone-128GB-White%2Fdp%2FB0HD17SRMD%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0HD17SRMD%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DANQZdTZ3md%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=ANQZdTZ3md&sp_cr=ZAZ
+                          - heading "Sponsored Ad - realme 16x 5G Smartphone 6+128GB White" [level=2] [ref=f4e908]: realme 16x 5G Smartphone 6+128GB White
+                        - generic "7000mAh Battery, 45W SuperVOOC, 6.8inch Screen, 144Hz Display, Rear 50MP+Front 8MP Camera, MediaTek Dimensity 6300, IP65" [ref=f4e910]
+                      - generic [ref=f4e912]:
+                        - text: "4.4"
+                        - button "4.4 out of 5 stars, rating details" [ref=f4e914] [cursor=pointer]:
+                          - generic [ref=f4e915]: 4.4 out of 5 stars
+                        - link "424 ratings" [ref=f4e918] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTMzNTY1ODg3MjAzMjo6Mzo6&url=%2Frealme-16x-Smartphone-128GB-White%2Fdp%2FB0HD17SRMD%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0HD17SRMD%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DANQZdTZ3md%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=ANQZdTZ3md&sp_cr=ZAZ#customerReviews
+                          - text: (424)
+                      - generic [ref=f4e919]:
+                        - generic [ref=f4e921]:
+                          - generic [ref=f4e922]: Price, product page
+                          - 'link "₹29,499 M.R.P: ₹42,999 M.R.P: ₹42,999" [ref=f4e923] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTMzNTY1ODg3MjAzMjo6Mzo6&url=%2Frealme-16x-Smartphone-128GB-White%2Fdp%2FB0HD17SRMD%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0HD17SRMD%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-4-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DANQZdTZ3md%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=ANQZdTZ3md&sp_cr=ZAZ
+                            - generic [ref=f4e924]:
+                              - generic [ref=f4e925]: ₹29,499
+                              - generic [ref=f4e926]: ₹29,499
+                            - generic [ref=f4e927]: "M.R.P: ₹42,999"
+                            - generic [ref=f4e928]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e929]:
+                                - generic [ref=f4e930]: ₹42,999
+                                - text: ₹42,999
+                          - text: (31% off)
+                        - generic [ref=f4e933]:
+                          - generic [ref=f4e934]: You pay ₹24,999
+                          - text: with coupon
+                      - generic [ref=f4e935]: FREE delivery Tue, 22 Sept
+                      - generic [ref=f4e954] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e955]
+                        - generic [ref=f4e956]: Add to cart
+                - listitem "5 of 5" [ref=f4e957]:
+                  - generic [ref=f4e963]:
+                    - link [ref=f4e966] [cursor=pointer]:
+                      - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTMzNzk1ODk0MDUzMjo6NDo6&url=%2FOPPO-Reno16C-Smartphone-256GB-Violet%2Fdp%2FB0HBK7CSL3%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0HBK7CSL3%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DFNTGkT2vU3%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=FNTGkT2vU3&sp_cr=ZAZ
+                    - generic [ref=f4e969]:
+                      - generic [ref=f4e970]:
+                        - link [ref=f4e971] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTMzNzk1ODk0MDUzMjo6NDo6&url=%2FOPPO-Reno16C-Smartphone-256GB-Violet%2Fdp%2FB0HBK7CSL3%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0HBK7CSL3%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DFNTGkT2vU3%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=FNTGkT2vU3&sp_cr=ZAZ
+                          - heading "Sponsored Ad - OPPO Reno16C 5G Smartphone 12GB+256GB Violet with No Cost EMI" [level=2] [ref=f4e972]: OPPO Reno16C 5G Smartphone 12GB+256GB Violet with No Cost EMI
+                        - generic "6.75-inch 120Hz AMOLED, 7000mAh Battery, 80W Fast Charging, 50MP & 50MP Triple Camera, MediaTek Dimensity 7300-Energy, IP69K" [ref=f4e974]
+                      - generic [ref=f4e976]:
+                        - text: "4.4"
+                        - button "4.4 out of 5 stars, rating details" [ref=f4e978] [cursor=pointer]:
+                          - generic [ref=f4e979]: 4.4 out of 5 stars
+                        - link "80 ratings" [ref=f4e982] [cursor=pointer]:
+                          - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTMzNzk1ODk0MDUzMjo6NDo6&url=%2FOPPO-Reno16C-Smartphone-256GB-Violet%2Fdp%2FB0HBK7CSL3%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0HBK7CSL3%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DFNTGkT2vU3%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=FNTGkT2vU3&sp_cr=ZAZ#customerReviews
+                          - text: (80)
+                      - generic [ref=f4e983]:
+                        - generic [ref=f4e985]:
+                          - generic [ref=f4e986]: Price, product page
+                          - 'link "₹59,999 M.R.P: ₹69,999 M.R.P: ₹69,999" [ref=f4e987] [cursor=pointer]':
+                            - /url: /sspa/click?ie=UTF8&spc=MToyNTAwMzEyMTg0Mzk3OTQ1OjE3ODk2MTg0MDE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTMzNzk1ODk0MDUzMjo6NDo6&url=%2FOPPO-Reno16C-Smartphone-256GB-Violet%2Fdp%2FB0HBK7CSL3%2Fref%3Dsxin_13_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%253Aamzn1.sym.6e35d58e-d276-4d9c-918a-3d084949b530%26cv_ct_cx%3Diphone%2B17%2Bpro%26keywords%3Diphone%2B17%2Bpro%26pd_rd_i%3DB0HBK7CSL3%26pd_rd_r%3D31475c9a-7a59-4ab8-852e-ed37e14d593a%26pd_rd_w%3DrngNy%26pd_rd_wg%3DzuSYP%26pf_rd_p%3D6e35d58e-d276-4d9c-918a-3d084949b530%26pf_rd_r%3DMMK8JT2BC1VH3CBWX40J%26qid%3D1789618401%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sr%3D1-5-66673dcf-083f-43ba-b782-d4a436cc5cfb-spons%26aref%3DFNTGkT2vU3%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=FNTGkT2vU3&sp_cr=ZAZ
+                            - generic [ref=f4e988]:
+                              - generic [ref=f4e989]: ₹59,999
+                              - generic [ref=f4e990]: ₹59,999
+                            - generic [ref=f4e991]: "M.R.P: ₹69,999"
+                            - generic [ref=f4e992]:
+                              - text: "M.R.P:"
+                              - generic [ref=f4e993]:
+                                - generic [ref=f4e994]: ₹69,999
+                                - text: ₹69,999
+                          - text: (14% off)
+                        - generic [ref=f4e998]:
+                          - generic [ref=f4e999]: Flat INR 750 Off on Select Bank Cards
+                          - generic [ref=f4e1000]: Flat INR 750 Off on Select Bank C...
+                      - generic [ref=f4e1001]: FREE delivery Tue, 22 Sept
+                      - generic [ref=f4e1020] [cursor=pointer]:
+                        - button "Add to cart" [ref=f4e1021]
+                        - generic [ref=f4e1022]: Add to cart
+          - generic [ref=f4e1024]:
+            - heading "More results" [level=2] [ref=f4e1028]
+            - generic:
+              - list:
+                - listitem [ref=f4e1029]:
+                  - generic [ref=f4e1035]:
+                    - link [ref=f4e1041] [cursor=pointer]:
+                      - /url: /iPhone-Air-256-GB-Promotion/dp/B0FQFTV1NP/ref=sr_1_6?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-6
+                    - generic [ref=f4e1046]:
+                      - generic [ref=f4e1047]:
+                        - heading "Apple" [level=2] [ref=f4e1050]
+                        - link [ref=f4e1051] [cursor=pointer]:
+                          - /url: /iPhone-Air-256-GB-Promotion/dp/B0FQFTV1NP/ref=sr_1_6?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-6
+                          - 'heading "iPhone Air 256 GB: Thinnest iPhone Ever, 16.63 cm (6.5″) Display with Promotion up to 120Hz, Powerful A19 Pro Chip, Center Stage Front Camera, All-Day Battery Life; Light Gold" [level=2] [ref=f4e1052]'
+                      - generic [ref=f4e1053]:
+                        - generic [ref=f4e1054]:
+                          - text: "4.5"
+                          - button "4.5 out of 5 stars, rating details" [ref=f4e1056] [cursor=pointer]:
+                            - generic [ref=f4e1057]: 4.5 out of 5 stars
+                          - link "364 ratings" [ref=f4e1060] [cursor=pointer]:
+                            - /url: /iPhone-Air-256-GB-Promotion/dp/B0FQFTV1NP/ref=sr_1_6?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-6#customerReviews
+                            - text: (364)
+                        - generic [ref=f4e1061]: 300+ bought in past month
+                      - generic [ref=f4e1064]:
+                        - generic [ref=f4e1065]:
+                          - generic [ref=f4e1067]:
+                            - generic [ref=f4e1068]: Price, product page
+                            - link "₹1,49,900" [ref=f4e1069] [cursor=pointer]:
+                              - /url: /iPhone-Air-256-GB-Promotion/dp/B0FQFTV1NP/ref=sr_1_6?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-6
+                              - generic [ref=f4e1070]:
+                                - generic [ref=f4e1071]: ₹1,49,900
+                                - generic [ref=f4e1072]: ₹1,49,900
+                          - generic [ref=f4e1076]:
+                            - generic [ref=f4e1077]: Save extra with No Cost EMI
+                            - generic [ref=f4e1078]: Save extra with No Cost EMI
+                        - generic [ref=f4e1079]: FREE delivery 19 Sept - 2 Oct
+                        - generic [ref=f4e1097] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e1098]
+                          - generic [ref=f4e1099]: Add to cart
+                        - group "colours available" [ref=f4e1101]:
+                          - list [ref=f4e1102]:
+                            - generic [ref=f4e1103]:
+                              - listitem:
+                                - link "Light Gold":
+                                  - /url: /iPhone-Air-256-GB-Promotion/dp/B0FQFTV1NP/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-6
+                                  - generic [ref=f4e1104] [cursor=pointer]
+                            - generic [ref=f4e1106]:
+                              - listitem:
+                                - link "Cloud White":
+                                  - /url: /iPhone-Air-256-GB-Promotion/dp/B0GTYWYF7K/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-6
+                                  - generic [ref=f4e1107] [cursor=pointer]
+                            - generic [ref=f4e1109]:
+                              - listitem:
+                                - link "Sky Blue":
+                                  - /url: /iPhone-Air-256-GB-Promotion/dp/B0GTYTD6PD/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-6
+                                  - generic [ref=f4e1110] [cursor=pointer]
+                            - generic [ref=f4e1112]:
+                              - listitem:
+                                - link "Space Black":
+                                  - /url: /iPhone-Air-256-GB-Promotion/dp/B0FQFBDQJ1/ref=cs_sr_dp_4?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-6
+                                  - generic [ref=f4e1113] [cursor=pointer]
+                - listitem [ref=f4e1117]:
+                  - generic [ref=f4e1123]:
+                    - link [ref=f4e1129] [cursor=pointer]:
+                      - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8G49LV/ref=sr_1_7?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-7
+                    - generic [ref=f4e1134]:
+                      - generic [ref=f4e1135]:
+                        - heading "Samsung" [level=2] [ref=f4e1138]
+                        - link [ref=f4e1139] [cursor=pointer]:
+                          - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8G49LV/ref=sr_1_7?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-7
+                          - heading "Galaxy S26 Ultra 5G (Cobalt Violet, 12GB RAM, 256GB Storage) with Built-in Privacy Display, AI Phone, Photo Assist, Creative Studio, 200MP Camera, 5000mAh Battery and Snapdragon 8 Elite Gen 5" [level=2] [ref=f4e1140]
+                      - generic [ref=f4e1141]:
+                        - generic [ref=f4e1142]:
+                          - text: "4.5"
+                          - button "4.5 out of 5 stars, rating details" [ref=f4e1144] [cursor=pointer]:
+                            - generic [ref=f4e1145]: 4.5 out of 5 stars
+                          - link "195 ratings" [ref=f4e1148] [cursor=pointer]:
+                            - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8G49LV/ref=sr_1_7?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-7#customerReviews
+                            - text: (195)
+                        - generic [ref=f4e1149]: 100+ bought in past month
+                      - generic [ref=f4e1152]:
+                        - generic [ref=f4e1153]:
+                          - generic [ref=f4e1155]:
+                            - generic [ref=f4e1156]: Price, product page
+                            - 'link "₹1,30,999 M.R.P: ₹1,69,999 M.R.P: ₹1,69,999" [ref=f4e1157] [cursor=pointer]':
+                              - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8G49LV/ref=sr_1_7?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-7
+                              - generic [ref=f4e1158]:
+                                - generic [ref=f4e1159]: ₹1,30,999
+                                - generic [ref=f4e1160]: ₹1,30,999
+                              - generic [ref=f4e1161]: "M.R.P: ₹1,69,999"
+                              - generic [ref=f4e1162]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e1163]:
+                                  - generic [ref=f4e1164]: ₹1,69,999
+                                  - text: ₹1,69,999
+                            - text: (23% off)
+                          - generic [ref=f4e1168]:
+                            - generic [ref=f4e1169]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=f4e1170]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=f4e1173]:
+                          - generic [ref=f4e1174]: FREE delivery Sat, 19 Sept
+                          - generic [ref=f4e1176]: Or fastest delivery Today
+                        - generic [ref=f4e1191] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e1192]
+                          - generic [ref=f4e1193]: Add to cart
+                        - group "colours available" [ref=f4e1195]:
+                          - list [ref=f4e1196]:
+                            - generic [ref=f4e1197]:
+                              - listitem:
+                                - link "Cobalt Violet":
+                                  - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8G49LV/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-7
+                                  - generic [ref=f4e1198] [cursor=pointer]
+                            - generic [ref=f4e1200]:
+                              - listitem:
+                                - link "Black":
+                                  - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8FNY5G/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-7
+                                  - generic [ref=f4e1201] [cursor=pointer]
+                            - generic [ref=f4e1203]:
+                              - listitem:
+                                - link "Sky Blue":
+                                  - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL85WGTZ/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-7
+                                  - generic [ref=f4e1204] [cursor=pointer]
+                            - generic [ref=f4e1206]:
+                              - listitem:
+                                - link "White":
+                                  - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8H5TY1/ref=cs_sr_dp_4?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-7
+                                  - generic [ref=f4e1207] [cursor=pointer]
+                - listitem [ref=f4e1211]:
+                  - generic [ref=f4e1217]:
+                    - link [ref=f4e1223] [cursor=pointer]:
+                      - /url: /OnePlus-Snapdragon%C2%AE-7300mAh-Personalised-Game-Changing/dp/B0FTRN7L8Q/ref=sr_1_8?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-8
+                    - generic [ref=f4e1228]:
+                      - generic [ref=f4e1229]:
+                        - heading "OnePlus" [level=2] [ref=f4e1232]
+                        - link [ref=f4e1233] [cursor=pointer]:
+                          - /url: /OnePlus-Snapdragon%C2%AE-7300mAh-Personalised-Game-Changing/dp/B0FTRN7L8Q/ref=sr_1_8?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-8
+                          - heading "15 | 12GB+256GB | Sand Storm | India's First Snapdragon® 8 Elite Gen 5 | 7300mAh Battery | Personalised AI | Game-Changing 165Hz Display | Triple 50MP Camera with 4K 120fps Dolby Vision" [level=2] [ref=f4e1234]
+                      - generic [ref=f4e1235]:
+                        - generic [ref=f4e1236]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=f4e1238] [cursor=pointer]:
+                            - generic [ref=f4e1239]: 4.6 out of 5 stars
+                          - link "807 ratings" [ref=f4e1242] [cursor=pointer]:
+                            - /url: /OnePlus-Snapdragon%C2%AE-7300mAh-Personalised-Game-Changing/dp/B0FTRN7L8Q/ref=sr_1_8?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-8#customerReviews
+                            - text: (807)
+                        - generic [ref=f4e1243]: 300+ bought in past month
+                      - generic [ref=f4e1246]:
+                        - generic [ref=f4e1247]:
+                          - generic [ref=f4e1249]:
+                            - generic [ref=f4e1250]: Price, product page
+                            - 'link "₹85,999 M.R.P: ₹89,999 M.R.P: ₹89,999" [ref=f4e1251] [cursor=pointer]':
+                              - /url: /OnePlus-Snapdragon%C2%AE-7300mAh-Personalised-Game-Changing/dp/B0FTRN7L8Q/ref=sr_1_8?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-8
+                              - generic [ref=f4e1252]:
+                                - generic [ref=f4e1253]: ₹85,999
+                                - generic [ref=f4e1254]: ₹85,999
+                              - generic [ref=f4e1255]: "M.R.P: ₹89,999"
+                              - generic [ref=f4e1256]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e1257]:
+                                  - generic [ref=f4e1258]: ₹89,999
+                                  - text: ₹89,999
+                            - text: (4% off)
+                          - generic [ref=f4e1262]:
+                            - generic [ref=f4e1263]: Save extra with No Cost EMI
+                            - generic [ref=f4e1264]: Save extra with No Cost EMI
+                        - generic [ref=f4e1267]:
+                          - generic [ref=f4e1268]: FREE delivery Sat, 19 Sept
+                          - generic [ref=f4e1270]: Or fastest delivery Today 2 pm - 6 pm
+                        - generic [ref=f4e1285] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e1286]
+                          - generic [ref=f4e1287]: Add to cart
+                        - group "colours available" [ref=f4e1289]:
+                          - list [ref=f4e1290]:
+                            - generic [ref=f4e1291]:
+                              - listitem:
+                                - link "Sand Storm":
+                                  - /url: /OnePlus-Snapdragon%C2%AE-7300mAh-Personalised-Game-Changing/dp/B0FTRN7L8Q/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-8
+                                  - generic [ref=f4e1292] [cursor=pointer]
+                            - generic [ref=f4e1294]:
+                              - listitem:
+                                - link "Infinite Black":
+                                  - /url: /OnePlus-Snapdragon%C2%AE-7300mAh-Personalised-Game-Changing/dp/B0FTR5NGHJ/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-8
+                                  - generic [ref=f4e1295] [cursor=pointer]
+                - listitem [ref=f4e1299]:
+                  - generic [ref=f4e1305]:
+                    - link [ref=f4e1311] [cursor=pointer]:
+                      - /url: /Samsung-Smartphone-JetBlack-Powerful-Snapdragon/dp/B0FDL5K6SV/ref=sr_1_9?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-9
+                    - generic [ref=f4e1316]:
+                      - generic [ref=f4e1317]:
+                        - heading "Samsung" [level=2] [ref=f4e1320]
+                        - link [ref=f4e1321] [cursor=pointer]:
+                          - /url: /Samsung-Smartphone-JetBlack-Powerful-Snapdragon/dp/B0FDL5K6SV/ref=sr_1_9?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-9
+                          - heading "Galaxy Z Fold7 5G Mobile with Galaxy AI (JetBlack, 12GB RAM, 256GB Storage), Ultra Sleek Design with 200MP Camera, Ultra-Smooth Gaming with Powerful Snapdragon 8 Elite, Google Gemini" [level=2] [ref=f4e1322]
+                      - generic [ref=f4e1324]:
+                        - text: "4.4"
+                        - button "4.4 out of 5 stars, rating details" [ref=f4e1326] [cursor=pointer]:
+                          - generic [ref=f4e1327]: 4.4 out of 5 stars
+                        - link "102 ratings" [ref=f4e1330] [cursor=pointer]:
+                          - /url: /Samsung-Smartphone-JetBlack-Powerful-Snapdragon/dp/B0FDL5K6SV/ref=sr_1_9?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-9#customerReviews
+                          - text: (102)
+                      - generic [ref=f4e1333]:
+                        - generic [ref=f4e1334]:
+                          - generic [ref=f4e1336]:
+                            - generic [ref=f4e1337]: Price, product page
+                            - 'link "₹1,69,999 M.R.P: ₹2,04,999 M.R.P: ₹2,04,999" [ref=f4e1338] [cursor=pointer]':
+                              - /url: /Samsung-Smartphone-JetBlack-Powerful-Snapdragon/dp/B0FDL5K6SV/ref=sr_1_9?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-9
+                              - generic [ref=f4e1339]:
+                                - generic [ref=f4e1340]: ₹1,69,999
+                                - generic [ref=f4e1341]: ₹1,69,999
+                              - generic [ref=f4e1342]: "M.R.P: ₹2,04,999"
+                              - generic [ref=f4e1343]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e1344]:
+                                  - generic [ref=f4e1345]: ₹2,04,999
+                                  - text: ₹2,04,999
+                            - text: (17% off)
+                          - generic [ref=f4e1348]:
+                            - generic [ref=f4e1349]: You pay ₹1,49,999
+                            - text: with coupon
+                        - generic [ref=f4e1352]:
+                          - generic [ref=f4e1353]: FREE delivery Sat, 19 Sept
+                          - generic [ref=f4e1355]: Or fastest delivery Today
+                        - generic [ref=f4e1370] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e1371]
+                          - generic [ref=f4e1372]: Add to cart
+                        - group "colours available" [ref=f4e1374]:
+                          - list [ref=f4e1375]:
+                            - generic [ref=f4e1376]:
+                              - listitem:
+                                - link "JetBlack":
+                                  - /url: /Samsung-Smartphone-JetBlack-Powerful-Snapdragon/dp/B0FDL5K6SV/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-9
+                                  - generic [ref=f4e1377] [cursor=pointer]
+                            - generic [ref=f4e1379]:
+                              - listitem:
+                                - link "Blue Shadow":
+                                  - /url: /Samsung-Smartphone-JetBlack-Powerful-Snapdragon/dp/B0FDL3VZR8/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-9
+                                  - generic [ref=f4e1380] [cursor=pointer]
+                            - generic [ref=f4e1382]:
+                              - listitem:
+                                - link "Silver Shadow":
+                                  - /url: /Samsung-Smartphone-JetBlack-Powerful-Snapdragon/dp/B0FDL5T1PF/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-9
+                                  - generic [ref=f4e1383] [cursor=pointer]
+                - listitem [ref=f4e1387]:
+                  - generic [ref=f4e1393]:
+                    - link [ref=f4e1399] [cursor=pointer]:
+                      - /url: /Apple-iPhone-Pro-Max-512/dp/B0CHX7FDD7/ref=sr_1_10?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-10
+                    - generic [ref=f4e1404]:
+                      - generic [ref=f4e1405]:
+                        - heading "Apple" [level=2] [ref=f4e1408]
+                        - link [ref=f4e1409] [cursor=pointer]:
+                          - /url: /Apple-iPhone-Pro-Max-512/dp/B0CHX7FDD7/ref=sr_1_10?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-10
+                          - heading "iPhone 15 Pro Max (512 GB) - White Titanium" [level=2] [ref=f4e1410]
+                      - generic [ref=f4e1412]:
+                        - text: "4.5"
+                        - button "4.5 out of 5 stars, rating details" [ref=f4e1414] [cursor=pointer]:
+                          - generic [ref=f4e1415]: 4.5 out of 5 stars
+                        - link "483 ratings" [ref=f4e1418] [cursor=pointer]:
+                          - /url: /Apple-iPhone-Pro-Max-512/dp/B0CHX7FDD7/ref=sr_1_10?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-10#customerReviews
+                          - text: (483)
+                      - generic [ref=f4e1421]:
+                        - generic "Currently unavailable." [ref=f4e1425]
+                        - link "See options" [ref=f4e1432] [cursor=pointer]:
+                          - /url: /Apple-iPhone-Pro-Max-512/dp/B0CHX7FDD7/ref=sr_1_10_so_CELLULAR_PHONE?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-10
+                - listitem [ref=f4e1435]:
+                  - generic [ref=f4e1441]:
+                    - link [ref=f4e1447] [cursor=pointer]:
+                      - /url: /OnePlus-Snapdragon-Segments-Fastest-Response/dp/B0GWLHVJRH/ref=sr_1_11?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-11
+                    - generic [ref=f4e1452]:
+                      - generic [ref=f4e1453]:
+                        - heading "OnePlus" [level=2] [ref=f4e1456]
+                        - link [ref=f4e1457] [cursor=pointer]:
+                          - /url: /OnePlus-Snapdragon-Segments-Fastest-Response/dp/B0GWLHVJRH/ref=sr_1_11?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-11
+                          - heading "Nord CE6 | 8GB+128GB | Pitch Black | Snapdragon 7s Gen 4 | Segment's Fastest Touch Response | 8000mAh Battery | 144Hz 1.5K AMOLED Display | 50MP Main + 32MP Selfie 4K Cameras | IP66,68,69,69K" [level=2] [ref=f4e1458]
+                      - generic [ref=f4e1459]:
+                        - generic [ref=f4e1460]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=f4e1462] [cursor=pointer]:
+                            - generic [ref=f4e1463]: 4.3 out of 5 stars
+                          - link "2,819 ratings" [ref=f4e1466] [cursor=pointer]:
+                            - /url: /OnePlus-Snapdragon-Segments-Fastest-Response/dp/B0GWLHVJRH/ref=sr_1_11?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-11#customerReviews
+                            - text: (2.8K)
+                        - generic [ref=f4e1467]: 500+ bought in past month
+                      - generic [ref=f4e1470]:
+                        - generic [ref=f4e1471]:
+                          - generic [ref=f4e1473]:
+                            - generic [ref=f4e1474]: Price, product page
+                            - 'link "₹37,999 M.R.P: ₹40,999 M.R.P: ₹40,999" [ref=f4e1475] [cursor=pointer]':
+                              - /url: /OnePlus-Snapdragon-Segments-Fastest-Response/dp/B0GWLHVJRH/ref=sr_1_11?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-11
+                              - generic [ref=f4e1476]:
+                                - generic [ref=f4e1477]: ₹37,999
+                                - generic [ref=f4e1478]: ₹37,999
+                              - generic [ref=f4e1479]: "M.R.P: ₹40,999"
+                              - generic [ref=f4e1480]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e1481]:
+                                  - generic [ref=f4e1482]: ₹40,999
+                                  - text: ₹40,999
+                            - text: (7% off)
+                          - generic [ref=f4e1486]:
+                            - generic [ref=f4e1487]: Flat INR 500 Off on Select Bank Cards
+                            - generic [ref=f4e1488]: Flat INR 500 Off on Select Bank Cards
+                        - generic [ref=f4e1491]:
+                          - generic [ref=f4e1492]: FREE delivery Sat, 19 Sept
+                          - generic [ref=f4e1494]: Or fastest delivery Today 2 pm - 6 pm
+                        - generic [ref=f4e1509] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e1510]
+                          - generic [ref=f4e1511]: Add to cart
+                        - group "colours available" [ref=f4e1513]:
+                          - list [ref=f4e1514]:
+                            - generic [ref=f4e1515]:
+                              - listitem:
+                                - link "Pitch Black":
+                                  - /url: /OnePlus-Snapdragon-Segments-Fastest-Response/dp/B0GWLHVJRH/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-11
+                                  - generic [ref=f4e1516] [cursor=pointer]
+                            - generic [ref=f4e1518]:
+                              - listitem:
+                                - link "Fresh Blue":
+                                  - /url: /OnePlus-Snapdragon-Segments-Fastest-Response/dp/B0GWLHWCLJ/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-11
+                                  - generic [ref=f4e1519] [cursor=pointer]
+                            - generic [ref=f4e1521]:
+                              - listitem:
+                                - link "Lunar Pearl":
+                                  - /url: /OnePlus-Snapdragon-Segments-Fastest-Response/dp/B0GWLTLNTV/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-11
+                                  - generic [ref=f4e1522] [cursor=pointer]
+                - listitem [ref=f4e1526]:
+                  - generic [ref=f4e1532]:
+                    - link [ref=f4e1538] [cursor=pointer]:
+                      - /url: /XIAOMI-Snapdragon-HyperCharge-Flagship-Experience/dp/B0GMQMG91N/ref=sr_1_12?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-12
+                    - generic [ref=f4e1543]:
+                      - generic [ref=f4e1544]:
+                        - heading "XIAOMI" [level=2] [ref=f4e1547]
+                        - link [ref=f4e1548] [cursor=pointer]:
+                          - /url: /XIAOMI-Snapdragon-HyperCharge-Flagship-Experience/dp/B0GMQMG91N/ref=sr_1_12?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-12
+                          - heading "17 Ultra (White, 16GB+512GB) | World's First Leica 1-Inch LOFIC Sensor | Snapdragon 8 Elite Gen 5 | 2K AMOLED Display | 90W HyperCharge HyperOS 3 | HyperAI Flagship Experience" [level=2] [ref=f4e1549]
+                      - generic [ref=f4e1551]:
+                        - text: "4.4"
+                        - button "4.4 out of 5 stars, rating details" [ref=f4e1553] [cursor=pointer]:
+                          - generic [ref=f4e1554]: 4.4 out of 5 stars
+                        - link "52 ratings" [ref=f4e1557] [cursor=pointer]:
+                          - /url: /XIAOMI-Snapdragon-HyperCharge-Flagship-Experience/dp/B0GMQMG91N/ref=sr_1_12?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-12#customerReviews
+                          - text: (52)
+                      - generic [ref=f4e1560]:
+                        - generic [ref=f4e1561]:
+                          - generic [ref=f4e1563]:
+                            - generic [ref=f4e1564]: Price, product page
+                            - 'link "₹1,39,999 M.R.P: ₹1,69,999 M.R.P: ₹1,69,999" [ref=f4e1565] [cursor=pointer]':
+                              - /url: /XIAOMI-Snapdragon-HyperCharge-Flagship-Experience/dp/B0GMQMG91N/ref=sr_1_12?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-12
+                              - generic [ref=f4e1566]:
+                                - generic [ref=f4e1567]: ₹1,39,999
+                                - generic [ref=f4e1568]: ₹1,39,999
+                              - generic [ref=f4e1569]: "M.R.P: ₹1,69,999"
+                              - generic [ref=f4e1570]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e1571]:
+                                  - generic [ref=f4e1572]: ₹1,69,999
+                                  - text: ₹1,69,999
+                            - text: (18% off)
+                          - generic [ref=f4e1576]:
+                            - generic [ref=f4e1577]: Save extra with No Cost EMI
+                            - generic [ref=f4e1578]: Save extra with No Cost EMI
+                        - generic [ref=f4e1581]:
+                          - generic [ref=f4e1582]: FREE delivery Sat, 19 Sept
+                          - generic [ref=f4e1584]: Or fastest delivery Tomorrow 8 am - 12 pm
+                        - generic [ref=f4e1599] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e1600]
+                          - generic [ref=f4e1601]: Add to cart
+                        - group "colours available" [ref=f4e1603]:
+                          - list [ref=f4e1604]:
+                            - generic [ref=f4e1605]:
+                              - listitem:
+                                - link "White":
+                                  - /url: /XIAOMI-Snapdragon-HyperCharge-Flagship-Experience/dp/B0GMQMG91N/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-12
+                                  - generic [ref=f4e1606] [cursor=pointer]
+                            - generic [ref=f4e1608]:
+                              - listitem:
+                                - link "Black":
+                                  - /url: /XIAOMI-Snapdragon-HyperCharge-Flagship-Experience/dp/B0GMQG7QM5/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-12
+                                  - generic [ref=f4e1609] [cursor=pointer]
+                - listitem [ref=f4e1613]:
+                  - generic [ref=f4e1619]:
+                    - link [ref=f4e1625] [cursor=pointer]:
+                      - /url: /OnePlus-Snapdragon%C2%AE-Battery-Lifetime-Warranty/dp/B0F5WTG8RG/ref=sr_1_13?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-13
+                    - generic [ref=f4e1630]:
+                      - generic [ref=f4e1631]:
+                        - heading "OnePlus" [level=2] [ref=f4e1634]
+                        - link [ref=f4e1635] [cursor=pointer]:
+                          - /url: /OnePlus-Snapdragon%C2%AE-Battery-Lifetime-Warranty/dp/B0F5WTG8RG/ref=sr_1_13?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-13
+                          - heading "13s | Snapdragon® 8 Elite | Smarter with OnePlus AI | Lifetime Display Warranty | 12GB+256GB | Green Silk" [level=2] [ref=f4e1636]
+                      - generic [ref=f4e1637]:
+                        - generic [ref=f4e1638]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=f4e1640] [cursor=pointer]:
+                            - generic [ref=f4e1641]: 4.6 out of 5 stars
+                          - link "2,352 ratings" [ref=f4e1644] [cursor=pointer]:
+                            - /url: /OnePlus-Snapdragon%C2%AE-Battery-Lifetime-Warranty/dp/B0F5WTG8RG/ref=sr_1_13?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-13#customerReviews
+                            - text: (2.3K)
+                        - generic [ref=f4e1645]: 500+ bought in past month
+                      - generic [ref=f4e1648]:
+                        - generic [ref=f4e1649]:
+                          - generic [ref=f4e1651]:
+                            - generic [ref=f4e1652]: Price, product page
+                            - 'link "₹54,999 M.R.P: ₹57,999 M.R.P: ₹57,999" [ref=f4e1653] [cursor=pointer]':
+                              - /url: /OnePlus-Snapdragon%C2%AE-Battery-Lifetime-Warranty/dp/B0F5WTG8RG/ref=sr_1_13?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-13
+                              - generic [ref=f4e1654]:
+                                - generic [ref=f4e1655]: ₹54,999
+                                - generic [ref=f4e1656]: ₹54,999
+                              - generic [ref=f4e1657]: "M.R.P: ₹57,999"
+                              - generic [ref=f4e1658]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e1659]:
+                                  - generic [ref=f4e1660]: ₹57,999
+                                  - text: ₹57,999
+                            - text: (5% off)
+                          - generic [ref=f4e1664]:
+                            - generic [ref=f4e1665]: Save extra with No Cost EMI
+                            - generic [ref=f4e1666]: Save extra with No Cost EMI
+                        - generic [ref=f4e1669]:
+                          - generic [ref=f4e1670]: FREE delivery Sat, 19 Sept
+                          - generic [ref=f4e1672]: Or fastest delivery Today 2 pm - 6 pm
+                        - generic [ref=f4e1687] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e1688]
+                          - generic [ref=f4e1689]: Add to cart
+                        - group "colours available" [ref=f4e1691]:
+                          - list [ref=f4e1692]:
+                            - generic [ref=f4e1693]:
+                              - listitem:
+                                - link "Green Silk":
+                                  - /url: /OnePlus-Snapdragon%C2%AE-Battery-Lifetime-Warranty/dp/B0F5WTG8RG/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-13
+                                  - generic [ref=f4e1694] [cursor=pointer]
+                            - generic [ref=f4e1696]:
+                              - listitem:
+                                - link "Black Velvet":
+                                  - /url: /OnePlus-Snapdragon%C2%AE-Battery-Lifetime-Warranty/dp/B0F5WRTGCG/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-13
+                                  - generic [ref=f4e1697] [cursor=pointer]
+                - listitem [ref=f4e1701]:
+                  - generic [ref=f4e1707]:
+                    - link [ref=f4e1713] [cursor=pointer]:
+                      - /url: /XIAOMI-Snapdragon-CrystalRes-HyperCharge-3500nits/dp/B0GMQWN8NR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-14
+                    - generic [ref=f4e1718]:
+                      - generic [ref=f4e1719]:
+                        - heading "XIAOMI" [level=2] [ref=f4e1722]
+                        - link [ref=f4e1723] [cursor=pointer]:
+                          - /url: /XIAOMI-Snapdragon-CrystalRes-HyperCharge-3500nits/dp/B0GMQWN8NR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-14
+                          - heading "17 (12GB/512GB)|50MP Leica Triple Camera|Snapdragon 8 Elite Gen 5|6.3\" CrystalRes 1-120Hz AMOLED|6330mAh Battery|100W HyperCharge HyperOS 3|3500nits Display| Ice Blue Edition" [level=2] [ref=f4e1724]
+                      - generic [ref=f4e1726]:
+                        - text: "4.3"
+                        - button "4.3 out of 5 stars, rating details" [ref=f4e1728] [cursor=pointer]:
+                          - generic [ref=f4e1729]: 4.3 out of 5 stars
+                        - link "79 ratings" [ref=f4e1732] [cursor=pointer]:
+                          - /url: /XIAOMI-Snapdragon-CrystalRes-HyperCharge-3500nits/dp/B0GMQWN8NR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-14#customerReviews
+                          - text: (79)
+                      - generic [ref=f4e1735]:
+                        - generic [ref=f4e1736]:
+                          - generic [ref=f4e1738]:
+                            - generic [ref=f4e1739]: Price, product page
+                            - 'link "₹89,999 M.R.P: ₹1,19,999 M.R.P: ₹1,19,999" [ref=f4e1740] [cursor=pointer]':
+                              - /url: /XIAOMI-Snapdragon-CrystalRes-HyperCharge-3500nits/dp/B0GMQWN8NR/ref=sr_1_14?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-14
+                              - generic [ref=f4e1741]:
+                                - generic [ref=f4e1742]: ₹89,999
+                                - generic [ref=f4e1743]: ₹89,999
+                              - generic [ref=f4e1744]: "M.R.P: ₹1,19,999"
+                              - generic [ref=f4e1745]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e1746]:
+                                  - generic [ref=f4e1747]: ₹1,19,999
+                                  - text: ₹1,19,999
+                            - text: (25% off)
+                          - generic [ref=f4e1751]:
+                            - generic [ref=f4e1752]: Save extra with No Cost EMI
+                            - generic [ref=f4e1753]: Save extra with No Cost EMI
+                        - generic [ref=f4e1756]:
+                          - generic [ref=f4e1757]: FREE delivery Sat, 19 Sept
+                          - generic [ref=f4e1759]: Or fastest delivery Tomorrow, 18 Sept
+                        - generic [ref=f4e1774] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e1775]
+                          - generic [ref=f4e1776]: Add to cart
+                        - group "colours available" [ref=f4e1778]:
+                          - list [ref=f4e1779]:
+                            - generic [ref=f4e1780]:
+                              - listitem:
+                                - link "Ice Blue":
+                                  - /url: /XIAOMI-Snapdragon-CrystalRes-HyperCharge-3500nits/dp/B0GMQWN8NR/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-14
+                                  - generic [ref=f4e1781] [cursor=pointer]
+                            - generic [ref=f4e1783]:
+                              - listitem:
+                                - link "Black":
+                                  - /url: /XIAOMI-Snapdragon-CrystalRes-HyperCharge-3500nits/dp/B0GMQWZ6ZM/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-14
+                                  - generic [ref=f4e1784] [cursor=pointer]
+                            - generic [ref=f4e1786]:
+                              - listitem:
+                                - link "Venture Green":
+                                  - /url: /XIAOMI-Snapdragon-CrystalRes-HyperCharge-3500nits/dp/B0GMQDDRX8/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-14
+                                  - generic [ref=f4e1787] [cursor=pointer]
+                - listitem [ref=f4e1791]:
+                  - generic [ref=f4e1797]:
+                    - link [ref=f4e1803] [cursor=pointer]:
+                      - /url: /Find-X9-Hasselblad-Ultra-Sensing-Optical-Zoom/dp/B0GZ7WG3BH/ref=sr_1_15?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-15
+                    - generic [ref=f4e1808]:
+                      - generic [ref=f4e1809]:
+                        - heading "OPPO" [level=2] [ref=f4e1812]
+                        - link [ref=f4e1813] [cursor=pointer]:
+                          - /url: /Find-X9-Hasselblad-Ultra-Sensing-Optical-Zoom/dp/B0GZ7WG3BH/ref=sr_1_15?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-15
+                          - heading "Find X9 Ultra 5G (Canyon Orange, 12GB, 512GB) | Hasselblad 50MP 10× Ultra-Sensing Optical-Zoom Telephoto | Dual 200MP | 8K Video | Snapdragon 8 Elite Gen 5 | 7050mAh 100W" [level=2] [ref=f4e1814]
+                      - generic [ref=f4e1816]:
+                        - text: "4.7"
+                        - button "4.7 out of 5 stars, rating details" [ref=f4e1818] [cursor=pointer]:
+                          - generic [ref=f4e1819]: 4.7 out of 5 stars
+                        - link "35 ratings" [ref=f4e1822] [cursor=pointer]:
+                          - /url: /Find-X9-Hasselblad-Ultra-Sensing-Optical-Zoom/dp/B0GZ7WG3BH/ref=sr_1_15?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-15#customerReviews
+                          - text: (35)
+                      - generic [ref=f4e1825]:
+                        - generic [ref=f4e1826]:
+                          - generic [ref=f4e1828]:
+                            - generic [ref=f4e1829]: Price, product page
+                            - 'link "₹1,69,999 M.R.P: ₹2,49,999 M.R.P: ₹2,49,999" [ref=f4e1830] [cursor=pointer]':
+                              - /url: /Find-X9-Hasselblad-Ultra-Sensing-Optical-Zoom/dp/B0GZ7WG3BH/ref=sr_1_15?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-15
+                              - generic [ref=f4e1831]:
+                                - generic [ref=f4e1832]: ₹1,69,999
+                                - generic [ref=f4e1833]: ₹1,69,999
+                              - generic [ref=f4e1834]: "M.R.P: ₹2,49,999"
+                              - generic [ref=f4e1835]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e1836]:
+                                  - generic [ref=f4e1837]: ₹2,49,999
+                                  - text: ₹2,49,999
+                            - text: (32% off)
+                          - generic [ref=f4e1841]:
+                            - generic [ref=f4e1842]: Flat INR 17000 Off on ALL Banks Cards
+                            - generic [ref=f4e1843]: Flat INR 17000 Off on ALL Banks Car...
+                        - generic [ref=f4e1846]:
+                          - generic [ref=f4e1847]: FREE delivery Sat, 19 Sept
+                          - generic [ref=f4e1849]: Or fastest delivery Tomorrow, 18 Sept
+                        - generic [ref=f4e1864] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e1865]
+                          - generic [ref=f4e1866]: Add to cart
+                        - group "colours available" [ref=f4e1868]:
+                          - list [ref=f4e1869]:
+                            - generic [ref=f4e1870]:
+                              - listitem:
+                                - link "Canyon Orange":
+                                  - /url: /Find-X9-Hasselblad-Ultra-Sensing-Optical-Zoom/dp/B0GZ7WG3BH/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-15
+                                  - generic [ref=f4e1871] [cursor=pointer]
+                            - generic [ref=f4e1873]:
+                              - listitem:
+                                - link "Tundra Umber":
+                                  - /url: /Find-X9-Hasselblad-Ultra-Sensing-Optical-Zoom/dp/B0GZ7Q6K2D/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-15
+                                  - generic [ref=f4e1874] [cursor=pointer]
+                - listitem [ref=f4e1878]:
+                  - generic [ref=f4e1884]:
+                    - link [ref=f4e1890] [cursor=pointer]:
+                      - /url: /iPhone-Air-TB-Thinnest-Promotion/dp/B0FQG8WM6R/ref=sr_1_16?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-16
+                    - generic [ref=f4e1895]:
+                      - generic [ref=f4e1896]:
+                        - heading "Apple" [level=2] [ref=f4e1899]
+                        - link [ref=f4e1900] [cursor=pointer]:
+                          - /url: /iPhone-Air-TB-Thinnest-Promotion/dp/B0FQG8WM6R/ref=sr_1_16?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-16
+                          - 'heading "iPhone Air 1 TB: Thinnest iPhone Ever, 16.63 cm (6.5″) Display with Promotion up to 120Hz, Powerful A19 Pro Chip, Center Stage Front Camera, All-Day Battery Life; Space Black" [level=2] [ref=f4e1901]'
+                      - generic [ref=f4e1903]:
+                        - text: "4.5"
+                        - button "4.5 out of 5 stars, rating details" [ref=f4e1905] [cursor=pointer]:
+                          - generic [ref=f4e1906]: 4.5 out of 5 stars
+                        - link "364 ratings" [ref=f4e1909] [cursor=pointer]:
+                          - /url: /iPhone-Air-TB-Thinnest-Promotion/dp/B0FQG8WM6R/ref=sr_1_16?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-16#customerReviews
+                          - text: (364)
+                      - generic [ref=f4e1912]:
+                        - link "See options" [ref=f4e1921] [cursor=pointer]:
+                          - /url: /iPhone-Air-TB-Thinnest-Promotion/dp/B0FQG8WM6R/ref=sr_1_16_so_CELLULAR_PHONE?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-16
+                        - generic [ref=f4e1923]:
+                          - text: No featured offers available₹2,24,900
+                          - link "(1 new offer)" [ref=f4e1925] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B0FQG8WM6R/ref=sr_1_16_olp?keywords=iphone+17+pro&dib_tag=se&dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&qid=1789618401&sr=8-16
+                        - group "colours available" [ref=f4e1927]:
+                          - list [ref=f4e1928]:
+                            - generic [ref=f4e1929]:
+                              - listitem:
+                                - link "Space Black":
+                                  - /url: /iPhone-Air-TB-Thinnest-Promotion/dp/B0FQG8WM6R/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-16
+                                  - generic [ref=f4e1930] [cursor=pointer]
+                            - generic [ref=f4e1932]:
+                              - listitem:
+                                - link "Cloud White":
+                                  - /url: /iPhone-Air-TB-Thinnest-Promotion/dp/B0GTYWYF7K/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-16
+                                  - generic [ref=f4e1933] [cursor=pointer]
+                            - generic [ref=f4e1935]:
+                              - listitem:
+                                - link "Light Gold":
+                                  - /url: /iPhone-Air-TB-Thinnest-Promotion/dp/B0GTYZ4CBH/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-16
+                                  - generic [ref=f4e1936] [cursor=pointer]
+                            - generic [ref=f4e1938]:
+                              - listitem:
+                                - link "Sky Blue":
+                                  - /url: /iPhone-Air-TB-Thinnest-Promotion/dp/B0GTYTD6PD/ref=cs_sr_dp_4?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-16
+                                  - generic [ref=f4e1939] [cursor=pointer]
+                - listitem [ref=f4e1943]:
+                  - generic [ref=f4e1949]:
+                    - link [ref=f4e1955] [cursor=pointer]:
+                      - /url: /Samsung-Smartphone-Titanium-Snapdragon-ProVisual/dp/B0DSKNQW8F/ref=sr_1_17?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-17
+                    - generic [ref=f4e1960]:
+                      - generic [ref=f4e1961]:
+                        - heading "Samsung" [level=2] [ref=f4e1964]
+                        - link [ref=f4e1965] [cursor=pointer]:
+                          - /url: /Samsung-Smartphone-Titanium-Snapdragon-ProVisual/dp/B0DSKNQW8F/ref=sr_1_17?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-17
+                          - heading "Galaxy S25 Ultra 5G AI Smartphone (Titanium Black, 12GB RAM, 256GB Storage), 200MP Camera, 5000mAh Ultra Long Battery, QHD+ Dynamic AMOLED 2X, Galaxy AI, Knox Security, S Pen Included" [level=2] [ref=f4e1966]
+                      - generic [ref=f4e1968]:
+                        - text: "4.4"
+                        - button "4.4 out of 5 stars, rating details" [ref=f4e1970] [cursor=pointer]:
+                          - generic [ref=f4e1971]: 4.4 out of 5 stars
+                        - link "388 ratings" [ref=f4e1974] [cursor=pointer]:
+                          - /url: /Samsung-Smartphone-Titanium-Snapdragon-ProVisual/dp/B0DSKNQW8F/ref=sr_1_17?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-17#customerReviews
+                          - text: (388)
+                      - generic [ref=f4e1977]:
+                        - generic [ref=f4e1978]:
+                          - generic [ref=f4e1980]:
+                            - generic [ref=f4e1981]: Price, product page
+                            - 'link "₹99,999 M.R.P: ₹1,29,999 M.R.P: ₹1,29,999" [ref=f4e1982] [cursor=pointer]':
+                              - /url: /Samsung-Smartphone-Titanium-Snapdragon-ProVisual/dp/B0DSKNQW8F/ref=sr_1_17?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-17
+                              - generic [ref=f4e1983]:
+                                - generic [ref=f4e1984]: ₹99,999
+                                - generic [ref=f4e1985]: ₹99,999
+                              - generic [ref=f4e1986]: "M.R.P: ₹1,29,999"
+                              - generic [ref=f4e1987]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e1988]:
+                                  - generic [ref=f4e1989]: ₹1,29,999
+                                  - text: ₹1,29,999
+                            - text: (23% off)
+                          - generic [ref=f4e1993]:
+                            - generic [ref=f4e1994]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=f4e1995]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=f4e1998]:
+                          - generic [ref=f4e1999]: FREE delivery Sat, 19 Sept
+                          - generic [ref=f4e2001]: Or fastest delivery Today 2 pm - 6 pm
+                        - generic [ref=f4e2016] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e2017]
+                          - generic [ref=f4e2018]: Add to cart
+                - listitem [ref=f4e2021]:
+                  - generic [ref=f4e2027]:
+                    - link [ref=f4e2033] [cursor=pointer]:
+                      - /url: /iQOO-Dimensity-Processor-Brightest-Captions/dp/B0HCN421YK/ref=sr_1_18?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-18
+                    - generic [ref=f4e2038]:
+                      - generic [ref=f4e2039]:
+                        - heading "iQOO" [level=2] [ref=f4e2042]
+                        - link [ref=f4e2043] [cursor=pointer]:
+                          - /url: /iQOO-Dimensity-Processor-Brightest-Captions/dp/B0HCN421YK/ref=sr_1_18?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-18
+                          - heading "Z11 5G (Aurora Green, 8GB RAM, 256GB Storage) | India's 1st MediaTek Dimensity 7500 Turbo Processor* | 3D Curved Display- Brightest Display in the Segment* | AI Captions- Record & Recap*" [level=2] [ref=f4e2044]
+                      - generic [ref=f4e2046]:
+                        - text: "4.2"
+                        - button "4.2 out of 5 stars, rating details" [ref=f4e2048] [cursor=pointer]:
+                          - generic [ref=f4e2049]: 4.2 out of 5 stars
+                        - link "12 ratings" [ref=f4e2052] [cursor=pointer]:
+                          - /url: /iQOO-Dimensity-Processor-Brightest-Captions/dp/B0HCN421YK/ref=sr_1_18?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-18#customerReviews
+                          - text: (12)
+                      - generic [ref=f4e2055]:
+                        - generic [ref=f4e2056]:
+                          - generic [ref=f4e2058]:
+                            - generic [ref=f4e2059]: Price, product page
+                            - 'link "₹44,999 M.R.P: ₹61,999 M.R.P: ₹61,999" [ref=f4e2060] [cursor=pointer]':
+                              - /url: /iQOO-Dimensity-Processor-Brightest-Captions/dp/B0HCN421YK/ref=sr_1_18?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-18
+                              - generic [ref=f4e2061]:
+                                - generic [ref=f4e2062]: ₹44,999
+                                - generic [ref=f4e2063]: ₹44,999
+                              - generic [ref=f4e2064]: "M.R.P: ₹61,999"
+                              - generic [ref=f4e2065]:
+                                - text: "M.R.P:"
+                                - generic [ref=f4e2066]:
+                                  - generic [ref=f4e2067]: ₹61,999
+                                  - text: ₹61,999
+                            - text: (27% off)
+                          - generic [ref=f4e2071]:
+                            - generic [ref=f4e2072]: Flat INR 500 Off on Select Bank Cards
+                            - generic [ref=f4e2073]: Flat INR 500 Off on Select Bank Cards
+                        - generic [ref=f4e2076]:
+                          - generic [ref=f4e2077]: FREE delivery Sat, 19 Sept
+                          - generic [ref=f4e2079]: Or fastest delivery Today 2 pm - 6 pm
+                        - generic [ref=f4e2094] [cursor=pointer]:
+                          - button "Add to cart" [ref=f4e2095]
+                          - generic [ref=f4e2096]: Add to cart
+                        - group "colours available" [ref=f4e2098]:
+                          - list [ref=f4e2099]:
+                            - generic [ref=f4e2100]:
+                              - listitem:
+                                - link "Aurora Green":
+                                  - /url: /iQOO-Dimensity-Processor-Brightest-Captions/dp/B0HCN421YK/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-18
+                                  - generic [ref=f4e2101] [cursor=pointer]
+                            - generic [ref=f4e2103]:
+                              - listitem:
+                                - link "Celestial Blue":
+                                  - /url: /iQOO-Dimensity-Processor-Brightest-Captions/dp/B0HCN495KN/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.xHBSMwombvtx9Gb4H_Y-y3lVnnP4Zt6ZDZBjqLRPauOOCi-y66u4VhDImAbARWQ3yyMM4KVgJKGIeoRNGW9zNU5MX-HTwpWi8Y1NdAxXRO-59SBNQDGjGmheMkKhXy6zlS0Ynd6lbA9uZ9AV-J8fpPCwRZd-IEFjH28bOR9aC-5Ko8sd_QHPq-2Oe-H7nwDV-oKijX3oP5e2_BmywiRkFB79m25kkTq1HODssKnDO9M.aeGhOOqiWhKdbacMbUr9eOnHIj519_OkF7J3MLIxPWg&dib_tag=se&keywords=iphone+17+pro&qid=1789618401&sr=8-18
+                                  - generic [ref=f4e2104] [cursor=pointer]
+          - generic [ref=f4e2115]:
+            - link "Sponsored video; click to navigate to featured product page. New Vaccum Magnetic Mobile Holders | Hands Free Suction Cup with Strong Grip Holders Mount | 360° Adjustable Phone Holder for Car Dashboard,Windshield for All Smartphones (Extended)" [ref=f4e2119] [cursor=pointer]:
+              - /url: https://aax-eu-zaz.amazon.in/x/c/JB6cgb2H3GQo7npzHoHkwW8AAAGgrZGxsAoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBqynil/clv1c_ek-wBPfzFcbarkl-pp8tQ2gzhFI6Z2algrbZ8_rpOlOvZsm8WdiPZn0UIcVQ2TCauW43XxskuYkCFAv-dOWoKYDg8QJuOyhI_wVjCF3_78RUBwjHdlzUvaF65OIUlhPzfQm-GalMeCXqGFmstoVKWdjKtF2ck1n6Mlw4X9erRYgbRdOt1lrlDdTKfK33Fc5q0lCIfGiImQPH85jHfxgg4n7eTt58QZumZJ0L3bEFaDOiemd3HKXZidVTnseV9i-Gw6pp_mrUUJyVShYgredlFyuCC8TTtM_O4cnJUKKphm9edd6fcFLrO37IBITNFAe4DJtCEuRJIV6Eyl2c-V9qX8Ooli6vinefl_u0txMiLICWc9vYaIh738aW1PN9Y838gjmkjj0jjaD_5bYQqsvCxa-gXM07T-vP2HMFmOEIHj7jvMWj4OuS_Z1SKRRjm6mRakqMZBCVCG8g4m-SEcZBqPgaXkdmN8JBn2tdN2atRNVQFS6KGi4j8FJDgILWF1GAMH_3X4Res1QjKtAxNEB-kOYTjYfFzpwrFVHj68nle-sWeMrbBsnUj8-HR4teO7OEYD_4lyfPXy-PET9FRrG2zdT-eM5xUytBnyIKSzWrXpxQaT-KnB2At4vJn339Q6qFas0PeAfrmxUeINMk6ILBiECeOxTq-bZP1IBsJZ1yO7uoiDIjQs__Toimu5I1XsPjx8bbpumQtUkCNPkqktSSEln4W_BnnrPbTVw0pINC58FbdHHLsgcqpLQqwe6Fm50pKC-1wQ4E3vDTrDwUwtn1jf2F7FXAYCl7N3WL4BojXVaKxwoq_Wd22CAvBHNxXEVldZ0Di74iRLRMfQxAmRRfQuj_vGs8Kz378vUm-hjnnpEPjLb9THVnW5JqgqG81CWu7RwgG4TAKyNEySRDjd7VvPquxwweGX8a5UaCv0Js_d0OgfW0sc1Dxk62Kop0Adsojf1RIehfl8VI1bLeggh2cuxNiaWMDP3ORf94ro4eAvtE8UKRw7HYU1eeFu4KmpPKwk_6yHi9SAVTX6W9m92TKuqZpOMz0bcF129XiPf8a-CbH_DFaag1g0iO1HUB49qCXtTM3JGWj5RR-uvntNYlwPpAEHzHkh8OIRJW-en7yG5mc7axT1fJjz7k99Q2OZOEsCSc8iMFmHTGy29ATEcNhiistcHb38Dj9OlC5QE2t9_xRkvO82w4BFBpkPuSyq0yw_pOSdTGEEmVVzYViPixt7xNKEPw61RvCmONefJ6QO86hGS3YoMywDyIMgKikZfzPp4mK7xxRpKZbeytnXRQH2Y-ZGC6JMjZwVwfEchfVqC2kcQWWlEkVyGGTWH74VcSLXmkj9NFFEsQPzm2g3uRNTchzoVHI3dsAqNO64xCnol6kLjYIJQQi8Yc-x-dWuyn6LlkDq3YdMt41hIxS4EM_IdEJ71UfTYzj0DpbNXsX_MBS2VavTwUXtBlFQmez8DxfntzMg89tcWk7cW5d9fFoP-60qG0_7-3A4c9jGi2qEiQCRHXQaInPHUUG1kDVoDOKcnEkj_RzqRpZ2gRlUQoX-UQM5J8IVh1B4OJ-FNYG2_TEtCLENqSebVNnWTdiUlR3FK-5oWYID4RAQDMgE-fRgsdmXddACxCz9ZNUGTvSP7xu75wly4r0JsVjkp32g0r2v5UR4N74knMNio4qtnEXAKjyS2sAFu_tv1LAsR0oj7TJonWLJ7oYozBwK_RFw/https://www.amazon.in/dp/B0F9WNPT2C?aref=1NtFPUopUX&pd_rd_i=B0F9WNPT2C&pf_rd_p=2a10787e-cd6a-4538-8307-70bc4d12c644&pd_rd_wg=DPmKo&pf_rd_r=MMK8JT2BC1VH3CBWX40J&pd_rd_w=ZINcr&pd_rd_r=e62eface-b9fa-4ea0-afa2-3f83901d020e
+            - generic [ref=f4e2128]:
+              - link [ref=f4e2134] [cursor=pointer]:
+                - /url: https://aax-eu-zaz.amazon.in/x/c/JB6cgb2H3GQo7npzHoHkwW8AAAGgrZGxsAoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBqynil/clv1c_ek-wBPfzFcbarkl-pp8tQ2gzhFI6Z2algrbZ8_rpOlOvZsm8WdiPZn0UIcVQ2TCauW43XxskuYkCFAv-dOWoKYDg8QJuOyhI_wVjCF3_78RUBwjHdlzUvaF65OIUlhPzfQm-GalMeCXqGFmstoVKWdjKtF2ck1n6Mlw4X9erRYgbRdOt1lrlDdTKfK33Fc5q0lCIfGiImQPH85jHfxgg4n7eTt58QZumZJ0L3bEFaDOiemd3HKXZidVTnseV9i-Gw6pp_mrUUJyVShYgredlFyuCC8TTtM_O4cnJUKKphm9edd6fcFLrO37IBITNFAe4DJtCEuRJIV6Eyl2c-V9qX8Ooli6vinefl_u0txMiLICWc9vYaIh738aW1PN9Y838gjmkjj0jjaD_5bYQqsvCxa-gXM07T-vP2HMFmOEIHj7jvMWj4OuS_Z1SKRRjm6mRakqMZBCVCG8g4m-SEcZBqPgaXkdmN8JBn2tdN2atRNVQFS6KGi4j8FJDgILWF1GAMH_3X4Res1QjKtAxNEB-kOYTjYfFzpwrFVHj68nle-sWeMrbBsnUj8-HR4teO7OEYD_4lyfPXy-PET9FRrG2zdT-eM5xUytBnyIKSzWrXpxQaT-KnB2At4vJn339Q6qFas0PeAfrmxUeINMk6ILBiECeOxTq-bZP1IBsJZ1yO7uoiDIjQs__Toimu5I1XsPjx8bbpumQtUkCNPkqktSSEln4W_BnnrPbTVw0pINC58FbdHHLsgcqpLQqwe6Fm50pKC-1wQ4E3vDTrDwUwtn1jf2F7FXAYCl7N3WL4BojXVaKxwoq_Wd22CAvBHNxXEVldZ0Di74iRLRMfQxAmRRfQuj_vGs8Kz378vUm-hjnnpEPjLb9THVnW5JqgqG81CWu7RwgG4TAKyNEySRDjd7VvPquxwweGX8a5UaCv0Js_d0OgfW0sc1Dxk62Kop0Adsojf1RIehfl8VI1bLeggh2cuxNiaWMDP3ORf94ro4eAvtE8UKRw7HYU1eeFu4KmpPKwk_6yHi9SAVTX6W9m92TKuqZpOMz0bcF129XiPf8a-CbH_DFaag1g0iO1HUB49qCXtTM3JGWj5RR-uvntNYlwPpAEHzHkh8OIRJW-en7yG5mc7axT1fJjz7k99Q2OZOEsCSc8iMFmHTGy29ATEcNhiistcHb38Dj9OlC5QE2t9_xRkvO82w4BFBpkPuSyq0yw_pOSdTGEEmVVzYViPixt7xNKEPw61RvCmONefJ6QO86hGS3YoMywDyIMgKikZfzPp4mK7xxRpKZbeytnXRQH2Y-ZGC6JMjZwVwfEchfVqC2kcQWWlEkVyGGTWH74VcSLXmkj9NFFEsQPzm2g3uRNTchzoVHI3dsAqNO64xCnol6kLjYIJQQi8Yc-x-dWuyn6LlkDq3YdMt41hIxS4EM_IdEJ71UfTYzj0DpbNXsX_MBS2VavTwUXtBlFQmez8DxfntzMg89tcWk7cW5d9fFoP-60qG0_7-3A4c9jGi2qEiQCRHXQaInPHUUG1kDVoDOKcnEkj_RzqRpZ2gRlUQoX-UQM5J8IVh1B4OJ-FNYG2_TEtCLENqSebVNnWTdiUlR3FK-5oWYID4RAQDMgE-fRgsdmXddACxCz9ZNUGTvSP7xu75wly4r0JsVjkp32g0r2v5UR4N74knMNio4qtnEXAKjyS2sAFu_tv1LAsR0oj7TJonWLJ7oYozBwK_RFw/https://www.amazon.in/AMBLIC-Adjustable-Dashboard-Windshield-Smartphones/dp/B0F9WNPT2C/ref=sxbs_sbv_search_btf?aref=1NtFPUopUX&content-id=amzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644%3Aamzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644&cv_ct_cx=iphone+17+pro&keywords=iphone+17+pro&pd_rd_i=B0F9WNPT2C&pd_rd_r=e62eface-b9fa-4ea0-afa2-3f83901d020e&pd_rd_w=ZINcr&pd_rd_wg=DPmKo&pf_rd_p=2a10787e-cd6a-4538-8307-70bc4d12c644&pf_rd_r=MMK8JT2BC1VH3CBWX40J&qid=1789618401&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+              - generic [ref=f4e2139]:
+                - generic [ref=f4e2140]:
+                  - generic [ref=f4e2141]: Sponsored
+                  - link [ref=f4e2145] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JB6cgb2H3GQo7npzHoHkwW8AAAGgrZGxsAoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBqynil/clv1c_ek-wBPfzFcbarkl-pp8tQ2gzhFI6Z2algrbZ8_rpOlOvZsm8WdiPZn0UIcVQ2TCauW43XxskuYkCFAv-dOWoKYDg8QJuOyhI_wVjCF3_78RUBwjHdlzUvaF65OIUlhPzfQm-GalMeCXqGFmstoVKWdjKtF2ck1n6Mlw4X9erRYgbRdOt1lrlDdTKfK33Fc5q0lCIfGiImQPH85jHfxgg4n7eTt58QZumZJ0L3bEFaDOiemd3HKXZidVTnseV9i-Gw6pp_mrUUJyVShYgredlFyuCC8TTtM_O4cnJUKKphm9edd6fcFLrO37IBITNFAe4DJtCEuRJIV6Eyl2c-V9qX8Ooli6vinefl_u0txMiLICWc9vYaIh738aW1PN9Y838gjmkjj0jjaD_5bYQqsvCxa-gXM07T-vP2HMFmOEIHj7jvMWj4OuS_Z1SKRRjm6mRakqMZBCVCG8g4m-SEcZBqPgaXkdmN8JBn2tdN2atRNVQFS6KGi4j8FJDgILWF1GAMH_3X4Res1QjKtAxNEB-kOYTjYfFzpwrFVHj68nle-sWeMrbBsnUj8-HR4teO7OEYD_4lyfPXy-PET9FRrG2zdT-eM5xUytBnyIKSzWrXpxQaT-KnB2At4vJn339Q6qFas0PeAfrmxUeINMk6ILBiECeOxTq-bZP1IBsJZ1yO7uoiDIjQs__Toimu5I1XsPjx8bbpumQtUkCNPkqktSSEln4W_BnnrPbTVw0pINC58FbdHHLsgcqpLQqwe6Fm50pKC-1wQ4E3vDTrDwUwtn1jf2F7FXAYCl7N3WL4BojXVaKxwoq_Wd22CAvBHNxXEVldZ0Di74iRLRMfQxAmRRfQuj_vGs8Kz378vUm-hjnnpEPjLb9THVnW5JqgqG81CWu7RwgG4TAKyNEySRDjd7VvPquxwweGX8a5UaCv0Js_d0OgfW0sc1Dxk62Kop0Adsojf1RIehfl8VI1bLeggh2cuxNiaWMDP3ORf94ro4eAvtE8UKRw7HYU1eeFu4KmpPKwk_6yHi9SAVTX6W9m92TKuqZpOMz0bcF129XiPf8a-CbH_DFaag1g0iO1HUB49qCXtTM3JGWj5RR-uvntNYlwPpAEHzHkh8OIRJW-en7yG5mc7axT1fJjz7k99Q2OZOEsCSc8iMFmHTGy29ATEcNhiistcHb38Dj9OlC5QE2t9_xRkvO82w4BFBpkPuSyq0yw_pOSdTGEEmVVzYViPixt7xNKEPw61RvCmONefJ6QO86hGS3YoMywDyIMgKikZfzPp4mK7xxRpKZbeytnXRQH2Y-ZGC6JMjZwVwfEchfVqC2kcQWWlEkVyGGTWH74VcSLXmkj9NFFEsQPzm2g3uRNTchzoVHI3dsAqNO64xCnol6kLjYIJQQi8Yc-x-dWuyn6LlkDq3YdMt41hIxS4EM_IdEJ71UfTYzj0DpbNXsX_MBS2VavTwUXtBlFQmez8DxfntzMg89tcWk7cW5d9fFoP-60qG0_7-3A4c9jGi2qEiQCRHXQaInPHUUG1kDVoDOKcnEkj_RzqRpZ2gRlUQoX-UQM5J8IVh1B4OJ-FNYG2_TEtCLENqSebVNnWTdiUlR3FK-5oWYID4RAQDMgE-fRgsdmXddACxCz9ZNUGTvSP7xu75wly4r0JsVjkp32g0r2v5UR4N74knMNio4qtnEXAKjyS2sAFu_tv1LAsR0oj7TJonWLJ7oYozBwK_RFw/https://www.amazon.in/AMBLIC-Adjustable-Dashboard-Windshield-Smartphones/dp/B0F9WNPT2C/ref=sxbs_sbv_search_btf?aref=1NtFPUopUX&content-id=amzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644%3Aamzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644&cv_ct_cx=iphone+17+pro&keywords=iphone+17+pro&pd_rd_i=B0F9WNPT2C&pd_rd_r=e62eface-b9fa-4ea0-afa2-3f83901d020e&pd_rd_w=ZINcr&pd_rd_wg=DPmKo&pf_rd_p=2a10787e-cd6a-4538-8307-70bc4d12c644&pf_rd_r=MMK8JT2BC1VH3CBWX40J&qid=1789618401&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+                    - heading "New Vaccum Magnetic Mobile Holders | Hands Free Suction Cup with Strong Grip Holders Mount | 360° Adjustable Phone Holder for Car Dashboard,Windshield for All Smartphones (Extended)" [level=2] [ref=f4e2146]
+                - generic [ref=f4e2147]:
+                  - generic [ref=f4e2148]:
+                    - text: "3.3"
+                    - button "3.3 out of 5 stars, rating details" [ref=f4e2150] [cursor=pointer]:
+                      - generic [ref=f4e2151]: 3.3 out of 5 stars
+                    - link "132 ratings" [ref=f4e2154] [cursor=pointer]:
+                      - /url: https://aax-eu-zaz.amazon.in/x/c/JB6cgb2H3GQo7npzHoHkwW8AAAGgrZGxsAoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBqynil/clv1c_ek-wBPfzFcbarkl-pp8tQ2gzhFI6Z2algrbZ8_rpOlOvZsm8WdiPZn0UIcVQ2TCauW43XxskuYkCFAv-dOWoKYDg8QJuOyhI_wVjCF3_78RUBwjHdlzUvaF65OIUlhPzfQm-GalMeCXqGFmstoVKWdjKtF2ck1n6Mlw4X9erRYgbRdOt1lrlDdTKfK33Fc5q0lCIfGiImQPH85jHfxgg4n7eTt58QZumZJ0L3bEFaDOiemd3HKXZidVTnseV9i-Gw6pp_mrUUJyVShYgredlFyuCC8TTtM_O4cnJUKKphm9edd6fcFLrO37IBITNFAe4DJtCEuRJIV6Eyl2c-V9qX8Ooli6vinefl_u0txMiLICWc9vYaIh738aW1PN9Y838gjmkjj0jjaD_5bYQqsvCxa-gXM07T-vP2HMFmOEIHj7jvMWj4OuS_Z1SKRRjm6mRakqMZBCVCG8g4m-SEcZBqPgaXkdmN8JBn2tdN2atRNVQFS6KGi4j8FJDgILWF1GAMH_3X4Res1QjKtAxNEB-kOYTjYfFzpwrFVHj68nle-sWeMrbBsnUj8-HR4teO7OEYD_4lyfPXy-PET9FRrG2zdT-eM5xUytBnyIKSzWrXpxQaT-KnB2At4vJn339Q6qFas0PeAfrmxUeINMk6ILBiECeOxTq-bZP1IBsJZ1yO7uoiDIjQs__Toimu5I1XsPjx8bbpumQtUkCNPkqktSSEln4W_BnnrPbTVw0pINC58FbdHHLsgcqpLQqwe6Fm50pKC-1wQ4E3vDTrDwUwtn1jf2F7FXAYCl7N3WL4BojXVaKxwoq_Wd22CAvBHNxXEVldZ0Di74iRLRMfQxAmRRfQuj_vGs8Kz378vUm-hjnnpEPjLb9THVnW5JqgqG81CWu7RwgG4TAKyNEySRDjd7VvPquxwweGX8a5UaCv0Js_d0OgfW0sc1Dxk62Kop0Adsojf1RIehfl8VI1bLeggh2cuxNiaWMDP3ORf94ro4eAvtE8UKRw7HYU1eeFu4KmpPKwk_6yHi9SAVTX6W9m92TKuqZpOMz0bcF129XiPf8a-CbH_DFaag1g0iO1HUB49qCXtTM3JGWj5RR-uvntNYlwPpAEHzHkh8OIRJW-en7yG5mc7axT1fJjz7k99Q2OZOEsCSc8iMFmHTGy29ATEcNhiistcHb38Dj9OlC5QE2t9_xRkvO82w4BFBpkPuSyq0yw_pOSdTGEEmVVzYViPixt7xNKEPw61RvCmONefJ6QO86hGS3YoMywDyIMgKikZfzPp4mK7xxRpKZbeytnXRQH2Y-ZGC6JMjZwVwfEchfVqC2kcQWWlEkVyGGTWH74VcSLXmkj9NFFEsQPzm2g3uRNTchzoVHI3dsAqNO64xCnol6kLjYIJQQi8Yc-x-dWuyn6LlkDq3YdMt41hIxS4EM_IdEJ71UfTYzj0DpbNXsX_MBS2VavTwUXtBlFQmez8DxfntzMg89tcWk7cW5d9fFoP-60qG0_7-3A4c9jGi2qEiQCRHXQaInPHUUG1kDVoDOKcnEkj_RzqRpZ2gRlUQoX-UQM5J8IVh1B4OJ-FNYG2_TEtCLENqSebVNnWTdiUlR3FK-5oWYID4RAQDMgE-fRgsdmXddACxCz9ZNUGTvSP7xu75wly4r0JsVjkp32g0r2v5UR4N74knMNio4qtnEXAKjyS2sAFu_tv1LAsR0oj7TJonWLJ7oYozBwK_RFw/https://www.amazon.in/AMBLIC-Adjustable-Dashboard-Windshield-Smartphones/dp/B0F9WNPT2C/ref=sxbs_sbv_search_btf?aref=1NtFPUopUX&content-id=amzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644%3Aamzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644&cv_ct_cx=iphone+17+pro&keywords=iphone+17+pro&pd_rd_i=B0F9WNPT2C&pd_rd_r=e62eface-b9fa-4ea0-afa2-3f83901d020e&pd_rd_w=ZINcr&pd_rd_wg=DPmKo&pf_rd_p=2a10787e-cd6a-4538-8307-70bc4d12c644&pf_rd_r=MMK8JT2BC1VH3CBWX40J&qid=1789618401&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55#customerReviews
+                      - text: (132)
+                  - generic [ref=f4e2155]: 300+ bought in past month
+                - generic [ref=f4e2158]:
+                  - generic [ref=f4e2159]:
+                    - generic [ref=f4e2161]:
+                      - generic [ref=f4e2162]: Price, product page
+                      - 'link "₹499 M.R.P: ₹1,199 M.R.P: ₹1,199" [ref=f4e2163] [cursor=pointer]':
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JB6cgb2H3GQo7npzHoHkwW8AAAGgrZGxsAoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICBqynil/clv1c_ek-wBPfzFcbarkl-pp8tQ2gzhFI6Z2algrbZ8_rpOlOvZsm8WdiPZn0UIcVQ2TCauW43XxskuYkCFAv-dOWoKYDg8QJuOyhI_wVjCF3_78RUBwjHdlzUvaF65OIUlhPzfQm-GalMeCXqGFmstoVKWdjKtF2ck1n6Mlw4X9erRYgbRdOt1lrlDdTKfK33Fc5q0lCIfGiImQPH85jHfxgg4n7eTt58QZumZJ0L3bEFaDOiemd3HKXZidVTnseV9i-Gw6pp_mrUUJyVShYgredlFyuCC8TTtM_O4cnJUKKphm9edd6fcFLrO37IBITNFAe4DJtCEuRJIV6Eyl2c-V9qX8Ooli6vinefl_u0txMiLICWc9vYaIh738aW1PN9Y838gjmkjj0jjaD_5bYQqsvCxa-gXM07T-vP2HMFmOEIHj7jvMWj4OuS_Z1SKRRjm6mRakqMZBCVCG8g4m-SEcZBqPgaXkdmN8JBn2tdN2atRNVQFS6KGi4j8FJDgILWF1GAMH_3X4Res1QjKtAxNEB-kOYTjYfFzpwrFVHj68nle-sWeMrbBsnUj8-HR4teO7OEYD_4lyfPXy-PET9FRrG2zdT-eM5xUytBnyIKSzWrXpxQaT-KnB2At4vJn339Q6qFas0PeAfrmxUeINMk6ILBiECeOxTq-bZP1IBsJZ1yO7uoiDIjQs__Toimu5I1XsPjx8bbpumQtUkCNPkqktSSEln4W_BnnrPbTVw0pINC58FbdHHLsgcqpLQqwe6Fm50pKC-1wQ4E3vDTrDwUwtn1jf2F7FXAYCl7N3WL4BojXVaKxwoq_Wd22CAvBHNxXEVldZ0Di74iRLRMfQxAmRRfQuj_vGs8Kz378vUm-hjnnpEPjLb9THVnW5JqgqG81CWu7RwgG4TAKyNEySRDjd7VvPquxwweGX8a5UaCv0Js_d0OgfW0sc1Dxk62Kop0Adsojf1RIehfl8VI1bLeggh2cuxNiaWMDP3ORf94ro4eAvtE8UKRw7HYU1eeFu4KmpPKwk_6yHi9SAVTX6W9m92TKuqZpOMz0bcF129XiPf8a-CbH_DFaag1g0iO1HUB49qCXtTM3JGWj5RR-uvntNYlwPpAEHzHkh8OIRJW-en7yG5mc7axT1fJjz7k99Q2OZOEsCSc8iMFmHTGy29ATEcNhiistcHb38Dj9OlC5QE2t9_xRkvO82w4BFBpkPuSyq0yw_pOSdTGEEmVVzYViPixt7xNKEPw61RvCmONefJ6QO86hGS3YoMywDyIMgKikZfzPp4mK7xxRpKZbeytnXRQH2Y-ZGC6JMjZwVwfEchfVqC2kcQWWlEkVyGGTWH74VcSLXmkj9NFFEsQPzm2g3uRNTchzoVHI3dsAqNO64xCnol6kLjYIJQQi8Yc-x-dWuyn6LlkDq3YdMt41hIxS4EM_IdEJ71UfTYzj0DpbNXsX_MBS2VavTwUXtBlFQmez8DxfntzMg89tcWk7cW5d9fFoP-60qG0_7-3A4c9jGi2qEiQCRHXQaInPHUUG1kDVoDOKcnEkj_RzqRpZ2gRlUQoX-UQM5J8IVh1B4OJ-FNYG2_TEtCLENqSebVNnWTdiUlR3FK-5oWYID4RAQDMgE-fRgsdmXddACxCz9ZNUGTvSP7xu75wly4r0JsVjkp32g0r2v5UR4N74knMNio4qtnEXAKjyS2sAFu_tv1LAsR0oj7TJonWLJ7oYozBwK_RFw/https://www.amazon.in/AMBLIC-Adjustable-Dashboard-Windshield-Smartphones/dp/B0F9WNPT2C/ref=sxbs_sbv_search_btf?aref=1NtFPUopUX&content-id=amzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644%3Aamzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644&cv_ct_cx=iphone+17+pro&keywords=iphone+17+pro&pd_rd_i=B0F9WNPT2C&pd_rd_r=e62eface-b9fa-4ea0-afa2-3f83901d020e&pd_rd_w=ZINcr&pd_rd_wg=DPmKo&pf_rd_p=2a10787e-cd6a-4538-8307-70bc4d12c644&pf_rd_r=MMK8JT2BC1VH3CBWX40J&qid=1789618401&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+                        - generic [ref=f4e2164]:
+                          - generic [ref=f4e2165]: ₹499
+                          - generic [ref=f4e2166]: ₹499
+                        - generic [ref=f4e2167]: "M.R.P: ₹1,199"
+                        - generic [ref=f4e2168]:
+                          - text: "M.R.P:"
+                          - generic [ref=f4e2169]:
+                            - generic [ref=f4e2170]: ₹1,199
+                            - text: ₹1,199
+                      - text: (58% off)
+                    - generic [ref=f4e2174]:
+                      - generic [ref=f4e2175]: Up to 5% back with Amazon Pay ICICI card
+                      - generic [ref=f4e2176]: Up to 5% back with Amazon Pay ICI...
+                  - generic [ref=f4e2177]: FREE delivery Sun, 20 Sept
+          - generic [ref=f4e2187]:
+            - generic "Related searches in iphone 17 pro" [ref=f4e2188]:
+              - heading "Related searches" [level=2] [ref=f4e2191]
+            - list [ref=f4e2193]:
+              - generic [ref=f4e2194]:
+                - listitem [ref=f4e2195]:
+                  - link "iphone 17 pro max" [ref=f4e2197] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro+max&ref=rsl_sug_0_0&pd_rd_w=FW1No&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=MMK8JT2BC1VH3CBWX40J&pd_rd_wg=DPmKo&pd_rd_r=e62eface-b9fa-4ea0-afa2-3f83901d020e&qid=1789618401
+                - listitem [ref=f4e2203]:
+                  - link "iphone 17" [ref=f4e2205] [cursor=pointer]:
+                    - /url: /s?k=iphone+17&ref=rsl_sug_0_3&pd_rd_w=FW1No&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=MMK8JT2BC1VH3CBWX40J&pd_rd_wg=DPmKo&pd_rd_r=e62eface-b9fa-4ea0-afa2-3f83901d020e&qid=1789618401
+              - generic [ref=f4e2211]:
+                - listitem [ref=f4e2212]:
+                  - link "iphone 14 pro" [ref=f4e2214] [cursor=pointer]:
+                    - /url: /s?k=iphone+14+pro&ref=rsl_sug_0_1&pd_rd_w=FW1No&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=MMK8JT2BC1VH3CBWX40J&pd_rd_wg=DPmKo&pd_rd_r=e62eface-b9fa-4ea0-afa2-3f83901d020e&qid=1789618401
+                - listitem [ref=f4e2220]:
+                  - link "iphone 15 pro max" [ref=f4e2222] [cursor=pointer]:
+                    - /url: /s?k=iphone+15+pro+max&ref=rsl_sug_0_4&pd_rd_w=FW1No&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=MMK8JT2BC1VH3CBWX40J&pd_rd_wg=DPmKo&pd_rd_r=e62eface-b9fa-4ea0-afa2-3f83901d020e&qid=1789618401
+              - generic [ref=f4e2228]:
+                - listitem [ref=f4e2229]:
+                  - link "iphone 15 pro" [ref=f4e2231] [cursor=pointer]:
+                    - /url: /s?k=iphone+15+pro&ref=rsl_sug_0_2&pd_rd_w=FW1No&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=MMK8JT2BC1VH3CBWX40J&pd_rd_wg=DPmKo&pd_rd_r=e62eface-b9fa-4ea0-afa2-3f83901d020e&qid=1789618401
+                - listitem [ref=f4e2237]:
+                  - link "iphone 15" [ref=f4e2239] [cursor=pointer]:
+                    - /url: /s?k=iphone+15&ref=rsl_sug_0_5&pd_rd_w=FW1No&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=MMK8JT2BC1VH3CBWX40J&pd_rd_wg=DPmKo&pd_rd_r=e62eface-b9fa-4ea0-afa2-3f83901d020e&qid=1789618401
+          - navigation "pagination" [ref=f4e2247]:
+            - list [ref=f4e2249]:
+              - listitem [ref=f4e2250]:
+                - button "Previous" [disabled] [ref=f4e2252]
+              - listitem [ref=f4e2255]:
+                - button "Page 1" [ref=f4e2257]: "1"
+              - listitem [ref=f4e2258]:
+                - button "Go to page 2" [ref=f4e2260] [cursor=pointer]: "2"
+              - listitem [ref=f4e2261]:
+                - button "Go to page 3" [ref=f4e2263] [cursor=pointer]: "3"
+              - button [disabled] [ref=f4e2264]:
+                - img [ref=f4e2265]: ...
+              - button "20" [disabled] [ref=f4e2267]
+              - listitem [ref=f4e2268]:
+                - button "Go to next page, page 2" [ref=f4e2270] [cursor=pointer]: Next
+          - generic [ref=f4e2278]:
+            - heading "Need help?" [level=2] [ref=f4e2281]
+            - generic [ref=f4e2282]:
+              - link "Visit the help section" [ref=f4e2283] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=201889520
+              - text: or
+              - link "contact us" [ref=f4e2284] [cursor=pointer]:
+                - /url: /gp/help/customer/contact-us
+        - link "Go back to filtering menu" [ref=f4e2285] [cursor=pointer]:
+          - /url: "#s-skipLinkTargetForFilterOptions"
+      - dialog "Filters" [ref=f4e2286]:
+        - generic [ref=f4e2287]:
+          - link "Skip to main search results" [ref=f4e2288] [cursor=pointer]:
+            - /url: "#s-skipLinkTargetForMainSearchResults"
+          - generic [ref=f4e2294]:
+            - group [ref=f4e2295]:
+              - heading "Delivery Day" [level=2] [ref=f4e2296]
+              - list "Delivery Day" [ref=f4e2297]:
+                - listitem [ref=f4e2298]:
+                  - link "Apply the filter Get It Today to narrow results" [ref=f4e2300] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_90%3A6741117031&dc&qid=1789618401&rnid=6741116031&ref=sr_nr_p_90_1&ds=v1%3A7qVGEpVKgvvYMRl429xd6rzYquZkpac7u0Mphm5cXSI
+                    - checkbox [ref=f4e2303]
+                    - text: Get It Today
+                - listitem [ref=f4e2305]:
+                  - link "Apply the filter Get It by Tomorrow to narrow results" [ref=f4e2307] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_90%3A6741118031&dc&qid=1789618401&rnid=6741116031&ref=sr_nr_p_90_2&ds=v1%3ANaU6UnWKHzANLj6iVVuL7Hf6tGj%2Fr79MV6EFzibsYKY
+                    - checkbox [ref=f4e2310]
+                    - text: Get It by Tomorrow
+                - listitem [ref=f4e2312]:
+                  - link "Apply the filter Get It in 2 Days to narrow results" [ref=f4e2314] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_90%3A20912642031&dc&qid=1789618401&rnid=6741116031&ref=sr_nr_p_90_3&ds=v1%3AXOZl%2Fj10Tw3wY6wgRa9cAh1SnI6TNwIIcvBuaAqhGPk
+                    - checkbox [ref=f4e2317]
+                    - text: Get It in 2 Days
+              - heading "Eligible for Free Delivery" [level=2] [ref=f4e2319]
+              - list "Eligible for Free Delivery" [ref=f4e2320]:
+                - listitem [ref=f4e2321]:
+                  - link "Apply the filter Free Shipping to narrow results" [ref=f4e2323] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_free_shipping_eligible%3A205563695031&dc&qid=1789618401&rnid=205563694031&ref=sr_nr_p_n_free_shipping_eligible_1&ds=v1%3Aps8Fz4yy1N738mFpdLSsmUYNCdXwexJDWGb%2Bt%2Fr%2FMAM
+                    - checkbox [ref=f4e2326]
+                    - text: Free Shipping
+                    - generic [ref=f4e2328]: Get FREE Shipping on eligible orders shipped by Amazon
+            - group [ref=f4e2329]:
+              - heading "Brands" [level=2] [ref=f4e2330]
+              - list "Brands" [ref=f4e2331]:
+                - listitem [ref=f4e2332]:
+                  - link "Apply the filter Samsung to narrow results" [ref=f4e2334] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_123%3A46655&dc&qid=1789618401&rnid=91049095031&ref=sr_nr_p_123_1&ds=v1%3AYRgWHifNxGWUTIAmtMAVDW4axJq3HluYUB8O%2B8EZZJ8
+                    - checkbox [ref=f4e2337]
+                    - text: Samsung
+            - group [ref=f4e2339]:
+              - heading "Storage Capacity" [level=2] [ref=f4e2340]
+              - list "Storage Capacity" [ref=f4e2341]:
+                - listitem [ref=f4e2342]:
+                  - link "Apply the filter 64 GB to narrow results" [ref=f4e2344] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003492455111%3A81332998031&dc&qid=1789618401&rnid=44349045031&ref=sr_nr_p_n_g-1003492455111_1&ds=v1%3AUFCVWzJLqRDzq5DvI4JPMJ6ap%2FDWmMkLzXzzRZg41EE
+                    - checkbox [ref=f4e2347]
+                    - text: 64 GB
+                - listitem [ref=f4e2349]:
+                  - link "Apply the filter 128 GB to narrow results" [ref=f4e2351] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003492455111%3A81332994031&dc&qid=1789618401&rnid=44349045031&ref=sr_nr_p_n_g-1003492455111_2&ds=v1%3ALG%2FRMVjLvr0TAO83aEBVQjLpxH4dgeJhYfMlwIhLuRU
+                    - checkbox [ref=f4e2354]
+                    - text: 128 GB
+                - listitem [ref=f4e2356]:
+                  - link "Apply the filter 256 GB to narrow results" [ref=f4e2358] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003492455111%3A81332996031&dc&qid=1789618401&rnid=44349045031&ref=sr_nr_p_n_g-1003492455111_3&ds=v1%3ATHgNPcKYqY5m7Sh01CaU3QMI1nIzr4XhJb%2FR1uKjqc8
+                    - checkbox [ref=f4e2361]
+                    - text: 256 GB
+            - group [ref=f4e2363]:
+              - heading "Customer Reviews" [level=2] [ref=f4e2364]
+              - list "Customer Reviews" [ref=f4e2365]:
+                - listitem [ref=f4e2366]:
+                  - link "Apply the filter 4 Stars & Up to narrow results" [ref=f4e2369] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_72%3A1318476031&dc&qid=1789618401&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3A93R5xTqU7II1DN2BFeN3Cphoh59qsmiPE%2Bjitm5aEjI
+                    - generic [ref=f4e2370]: 4 Stars
+                    - text: "& Up"
+            - group [ref=f4e2372]:
+              - generic [ref=f4e2373]:
+                - generic [ref=f4e2374]: Price
+                - generic [ref=f4e2377]:
+                  - generic [ref=f4e2378]:
+                    - generic [ref=f4e2379]: ₹8,900
+                    - generic [ref=f4e2380]: –
+                    - generic [ref=f4e2381]: ₹117,700+
+                  - generic [ref=f4e2384]:
+                    - generic:
+                      - slider "Minimum price": "0"
+                    - generic [ref=f4e2385]:
+                      - slider "Maximum price": "172"
+              - list [ref=f4e2386]:
+                - listitem [ref=f4e2387]:
+                  - link "Up to ₹39,000" [ref=f4e2389] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_36%3A-3900000&dc&qid=1789618401&rnid=1318502031&ref=sr_nr_p_36_1&ds=v1%3AKO0fDG%2F3DvrTKgK2gA67qN85zyg5oyedTOkEtpbMqk4
+                - listitem [ref=f4e2390]:
+                  - link "Over ₹39,000" [ref=f4e2392] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_36%3A3900000-&dc&qid=1789618401&rnid=1318502031&ref=sr_nr_p_36_2&ds=v1%3A4PayE%2BzrQDaeUfSlSt1e%2FeQynExG9dPHjUT2D553Q%2Bw
+            - group [ref=f4e2393]:
+              - heading "Discount" [level=2] [ref=f4e2394]
+              - list "Discount" [ref=f4e2395]:
+                - listitem [ref=f4e2396]:
+                  - link "10% Off or more" [ref=f4e2398] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_pct-off-with-tax%3A2665399031&dc&qid=1789618401&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_1&ds=v1%3Awcy8681rIJq3W%2F9bOdohGtfPg%2Boy2DUaH75zJ5zEyNs
+                - listitem [ref=f4e2399]:
+                  - link "25% Off or more" [ref=f4e2401] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_pct-off-with-tax%3A2665400031&dc&qid=1789618401&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_2&ds=v1%3A1xebTXTcOpZVH9yAY%2BQCFR1ojHNzWlXMYi7GcwuP0UQ
+                - listitem [ref=f4e2402]:
+                  - generic [ref=f4e2403]: 35% Off or more
+                - listitem [ref=f4e2404]:
+                  - generic [ref=f4e2405]: 50% Off or more
+                - listitem [ref=f4e2406]:
+                  - generic [ref=f4e2407]: 60% Off or more
+                - listitem [ref=f4e2408]:
+                  - generic [ref=f4e2409]: 70% Off or more
+            - group [ref=f4e2410]:
+              - heading "Item Condition" [level=2] [ref=f4e2411]
+              - list "Item Condition" [ref=f4e2412]:
+                - listitem [ref=f4e2413]:
+                  - link "Apply the filter New to narrow results" [ref=f4e2415] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_condition-type%3A8609960031&dc&qid=1789618401&rnid=8609959031&ref=sr_nr_p_n_condition-type_1&ds=v1%3A8pzgJfcQ2JTBD6jorLrCfcK05pUYIB5Q3pMoSv1eyjc
+                    - checkbox [ref=f4e2418]
+                    - text: New
+            - group [ref=f4e2420]:
+              - heading "Cellular Technology" [level=2] [ref=f4e2421]
+              - list "Cellular Technology" [ref=f4e2422]:
+                - listitem [ref=f4e2423]:
+                  - link "Apply the filter 5G to narrow results" [ref=f4e2425] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003469290111%3A33962382031&dc&qid=1789618401&rnid=33962288031&ref=sr_nr_p_n_g-1003469290111_1&ds=v1%3AAQE2kAuRhBP7tlhd5ygRgoECtQrveUXJwlET6LO70rc
+                    - checkbox [ref=f4e2428]
+                    - text: 5G
+            - group [ref=f4e2430]:
+              - heading "Screen Size" [level=2] [ref=f4e2431]
+              - list "Screen Size" [ref=f4e2432]:
+                - listitem [ref=f4e2433]:
+                  - link "Apply the filter 15 to 17.9 cm to narrow results" [ref=f4e2435] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_feature_browse-bin%3A212266964031&dc&qid=1789618401&rnid=212266959031&ref=sr_nr_p_n_feature_browse-bin_1&ds=v1%3ASkIqCTCMf4L7ScGY9FQIl%2Bdo03kwR390Q2hA4ArZNuc
+                    - checkbox [ref=f4e2438]
+                    - text: 15 to 17.9 cm
+            - group [ref=f4e2440]:
+              - heading "Battery Capacity" [level=2] [ref=f4e2441]
+              - list "Battery Capacity" [ref=f4e2442]:
+                - listitem [ref=f4e2443]:
+                  - link "Apply the filter 5,000 to 5,999 mAh to narrow results" [ref=f4e2445] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101015098008111%3A91805326031&dc&qid=1789618401&rnid=91805324031&ref=sr_nr_p_n_g-101015098008111_1&ds=v1%3AEurGWh3IbfdMX1NYmX3Xr%2F0J9XU9mSTcI7HE0wafNTs
+                    - checkbox [ref=f4e2448]
+                    - text: 5,000 to 5,999 mAh
+            - group [ref=f4e2450]:
+              - heading "Availability" [level=2] [ref=f4e2451]
+              - list "Availability" [ref=f4e2452]:
+                - listitem [ref=f4e2453]:
+                  - link "Apply the filter Include Out of Stock to narrow results" [ref=f4e2455] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_availability%3A1318485031&dc&qid=1789618401&rnid=1318483031&ref=sr_nr_p_n_availability_2&ds=v1%3AgaRSSthpUnp6nM%2BuVOyS2VpvikdVBeuU8pYUFFR%2BI8k
+                    - checkbox [ref=f4e2458]
+                    - text: Include Out of Stock
+            - group [ref=f4e2460]:
+              - heading "Pay On Delivery" [level=2] [ref=f4e2461]
+              - list "Pay On Delivery" [ref=f4e2462]:
+                - listitem [ref=f4e2463]:
+                  - link "Apply the filter Eligible for Pay On Delivery to narrow results" [ref=f4e2465] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_is_cod_eligible%3A4931671031&dc&qid=1789618401&rnid=4931670031&ref=sr_nr_p_n_is_cod_eligible_1&ds=v1%3ApB6Y55%2FWyzAKkDcVh%2FcW1SwYtdfIW2Y%2BD3O5id8KzCQ
+                    - checkbox [ref=f4e2468]
+                    - text: Eligible for Pay On Delivery
+            - group [ref=f4e2470]:
+              - heading "Colour" [level=2] [ref=f4e2471]
+              - list "Colour" [ref=f4e2472]:
+                - listitem [ref=f4e2473]:
+                  - generic:
+                    - link "Apply the filter Purple to narrow results":
+                      - /url: /s?k=iphone+17+pro&rh=p_n_size_two_browse-vebin%3A15564008031&dc&qid=1789618401&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_1&ds=v1%3AGouYEf95lxhS7yB4q4M5sFNEGT3rBPtahPUKEMvEgLg
+                      - generic [ref=f4e2474] [cursor=pointer]
+                - listitem [ref=f4e2475]:
+                  - generic:
+                    - link "Apply the filter Black to narrow results":
+                      - /url: /s?k=iphone+17+pro&rh=p_n_size_two_browse-vebin%3A15563995031&dc&qid=1789618401&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_2&ds=v1%3AtEVMQ1efiqrzi0JbI6ZmEj8xwyLN8smB0oLA1Izaws4
+                      - generic [ref=f4e2476] [cursor=pointer]
+                - listitem [ref=f4e2477]:
+                  - generic:
+                    - link "Apply the filter Orange to narrow results":
+                      - /url: /s?k=iphone+17+pro&rh=p_n_size_two_browse-vebin%3A15564002031&dc&qid=1789618401&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_3&ds=v1%3AUZe1%2B%2BYZSda8%2Fb6x2woMyGZ2FZ6Rka4oLCqlxF1v%2FYA
+                      - generic [ref=f4e2478] [cursor=pointer]
+            - group [ref=f4e2479]:
+              - heading "Camera Resolution" [level=2] [ref=f4e2480]
+              - list "Camera Resolution" [ref=f4e2481]:
+                - listitem [ref=f4e2482]:
+                  - link "Apply the filter 20 MP & above to narrow results" [ref=f4e2484] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1004151207091%3A1898707031&dc&qid=1789618401&rnid=1898694031&ref=sr_nr_p_n_g-1004151207091_1&ds=v1%3A3FieM6nLtyiXT7kwngmtKPYEr4esCJlbavr7eSvu1HI
+                    - checkbox [ref=f4e2487]
+                    - text: 20 MP & above
+            - group [ref=f4e2489]:
+              - heading "RAM Size" [level=2] [ref=f4e2490]
+              - list "RAM Size" [ref=f4e2491]:
+                - listitem [ref=f4e2492]:
+                  - link "Apply the filter 6 to 7.9 GB to narrow results" [ref=f4e2494] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003495121111%3A44897287031&dc&qid=1789618401&rnid=44897277031&ref=sr_nr_p_n_g-1003495121111_1&ds=v1%3AvCzffZ8fW0sQtK9QJ2Gv9ce%2FlPagyi1qNv%2BPv9kPTx4
+                    - checkbox [ref=f4e2497]
+                    - text: 6 to 7.9 GB
+                - listitem [ref=f4e2499]:
+                  - link "Apply the filter 8 to 9.9 GB to narrow results" [ref=f4e2501] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003495121111%3A44897288031&dc&qid=1789618401&rnid=44897277031&ref=sr_nr_p_n_g-1003495121111_2&ds=v1%3Af%2B8rGvc1NHmfMMhiDttg8lg4emxq8cD%2FiPO%2F7QqBaZg
+                    - checkbox [ref=f4e2504]
+                    - text: 8 to 9.9 GB
+                - listitem [ref=f4e2506]:
+                  - link "Apply the filter 10 GB & Above to narrow results" [ref=f4e2508] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003495121111%3A44897292031&dc&qid=1789618401&rnid=44897277031&ref=sr_nr_p_n_g-1003495121111_3&ds=v1%3Aux9qBj%2B%2Fjuf0AqH9L0ESYeg2R9VDIqdhrbNsem0PHuU
+                    - checkbox [ref=f4e2511]
+                    - text: 10 GB & Above
+            - group [ref=f4e2513]:
+              - heading "Seller" [level=2] [ref=f4e2514]
+              - list "Seller" [ref=f4e2515]:
+                - listitem [ref=f4e2516]:
+                  - link "Apply the filter Clicktech Retail Private Ltd to narrow results" [ref=f4e2518] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_6%3AAJ6SIZC8YQDZX&dc&qid=1789618401&rnid=1318474031&ref=sr_nr_p_6_1&ds=v1%3Av7Ywm9LjZZMFVVZGu%2FU%2F5yhcQV3Q15Lgi7bAcqIxXno
+                    - checkbox [ref=f4e2521]
+                    - text: Clicktech Retail Private Ltd
+                - listitem [ref=f4e2523]:
+                  - link "Apply the filter Surya products to narrow results" [ref=f4e2525] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_6%3AA3MQIWDELSY5P3&dc&qid=1789618401&rnid=1318474031&ref=sr_nr_p_6_2&ds=v1%3AsdR5Ll%2B%2FMrV2KAOK2aGqCCKg%2FGy6mjdCdDj1P37vkoI
+                    - checkbox [ref=f4e2528]
+                    - text: Surya products
+            - group [ref=f4e2530]:
+              - heading "SIM Card Slot Count" [level=2] [ref=f4e2531]
+              - list "SIM Card Slot Count" [ref=f4e2532]:
+                - listitem [ref=f4e2533]:
+                  - link "Apply the filter Dual SIM to narrow results" [ref=f4e2535] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1002989427111%3A27179459031&dc&qid=1789618401&rnid=27179439031&ref=sr_nr_p_n_g-1002989427111_1&ds=v1%3AJuRZ8WKfA3ATl%2Bjld4GW1PEXxTcaz8yfln7PXDM38Ok
+                    - checkbox [ref=f4e2538]
+                    - text: Dual SIM
+            - group [ref=f4e2540]:
+              - heading "Mobile Phone Primary Camera Resolution" [level=2] [ref=f4e2541]
+              - list "Mobile Phone Primary Camera Resolution" [ref=f4e2542]:
+                - listitem [ref=f4e2543]:
+                  - link "Apply the filter 20 - 23.9 MP to narrow results" [ref=f4e2545] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_feature_fourteen_browse-bin%3A21329556031&dc&qid=1789618401&rnid=21345983031&ref=sr_nr_p_n_feature_fourteen_browse-bin_1&ds=v1%3A%2Fsclajn0MPTDXsslhoXWbnm1awk6T80B5MTWe%2F%2BMkhQ
+                    - checkbox [ref=f4e2548]
+                    - text: 20 - 23.9 MP
+                - listitem [ref=f4e2550]:
+                  - link "Apply the filter 32 MP & Above to narrow results" [ref=f4e2552] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_feature_fourteen_browse-bin%3A21329559031&dc&qid=1789618401&rnid=21345983031&ref=sr_nr_p_n_feature_fourteen_browse-bin_2&ds=v1%3Azx2PXYz6%2BkoqLF2ewODDCi3mmihr96baOCM0bZM8ODk
+                    - checkbox [ref=f4e2555]
+                    - text: 32 MP & Above
+            - group [ref=f4e2557]:
+              - heading "Display Type" [level=2] [ref=f4e2558]
+              - list "Display Type" [ref=f4e2559]:
+                - listitem [ref=f4e2560]:
+                  - link "Apply the filter AMOLED to narrow results" [ref=f4e2562] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101013595158111%3A66009619031&dc&qid=1789618401&rnid=66009617031&ref=sr_nr_p_n_g-101013595158111_1&ds=v1%3AN72jbve7RxXEWna5wE5Klx3TKigmeSYEyB88RuiP10w
+                    - checkbox [ref=f4e2565]
+                    - text: AMOLED
+            - group [ref=f4e2567]:
+              - heading "Connectivity" [level=2] [ref=f4e2568]
+              - list "Connectivity" [ref=f4e2569]:
+                - listitem [ref=f4e2570]:
+                  - link "Apply the filter Bluetooth to narrow results" [ref=f4e2572] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1002112230111%3A27363277031&dc&qid=1789618401&rnid=27363274031&ref=sr_nr_p_n_g-1002112230111_1&ds=v1%3A4Hzjip0JKQboironoS4%2FqHchUXG%2F%2B655FGx9E%2FnEDxY
+                    - checkbox [ref=f4e2575]
+                    - text: Bluetooth
+                - listitem [ref=f4e2577]:
+                  - link "Apply the filter NFC to narrow results" [ref=f4e2579] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1002112230111%3A27363279031&dc&qid=1789618401&rnid=27363274031&ref=sr_nr_p_n_g-1002112230111_2&ds=v1%3ABRgMLrbBL6bWPbbmwXJ%2Ff%2FqOslZ%2F70afCKEJg4S4kbE
+                    - checkbox [ref=f4e2582]
+                    - text: NFC
+                - listitem [ref=f4e2584]:
+                  - link "Apply the filter USB to narrow results" [ref=f4e2586] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1002112230111%3A27363276031&dc&qid=1789618401&rnid=27363274031&ref=sr_nr_p_n_g-1002112230111_3&ds=v1%3Awi7O4lh6CEGs49%2BbY2DHxkNjTu6WV1GHYiHlaDzIbVo
+                    - checkbox [ref=f4e2589]
+                    - text: USB
+                - listitem [ref=f4e2591]:
+                  - link "Apply the filter Wi-Fi to narrow results" [ref=f4e2593] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1002112230111%3A27363278031&dc&qid=1789618401&rnid=27363274031&ref=sr_nr_p_n_g-1002112230111_4&ds=v1%3AJ93JDbtq9IUjtAvRo3TYo14ge9K2ahB7dyTAP3YK00w
+                    - checkbox [ref=f4e2596]
+                    - text: Wi-Fi
+            - group [ref=f4e2598]:
+              - heading "Video Capture Resolution" [level=2] [ref=f4e2599]
+              - list "Video Capture Resolution" [ref=f4e2600]:
+                - listitem [ref=f4e2601]:
+                  - link "Apply the filter 1080p to narrow results" [ref=f4e2603] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003305462111%3A28430295031&dc&qid=1789618401&rnid=28430291031&ref=sr_nr_p_n_g-1003305462111_1&ds=v1%3AEcyqin2i9Cu%2FENknkbPyGZ5t18fO3TEdF2MS7lz0xHQ
+                    - checkbox [ref=f4e2606]
+                    - text: 1080p
+                - listitem [ref=f4e2608]:
+                  - link "Apply the filter 4k to narrow results" [ref=f4e2610] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003305462111%3A28430294031&dc&qid=1789618401&rnid=28430291031&ref=sr_nr_p_n_g-1003305462111_2&ds=v1%3A66LGE7ca3wmHwXE2oPgt%2FQXtmrYbnzae%2BYs5gVPvO44
+                    - checkbox [ref=f4e2613]
+                    - text: 4k
+                - listitem [ref=f4e2615]:
+                  - link "Apply the filter 8k to narrow results" [ref=f4e2617] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003305462111%3A28430296031&dc&qid=1789618401&rnid=28430291031&ref=sr_nr_p_n_g-1003305462111_3&ds=v1%3AmkAL%2FSNksg%2F8v7i7UHDWFgxYWK96zsUFVAkeeX0qSf0
+                    - checkbox [ref=f4e2620]
+                    - text: 8k
+            - group [ref=f4e2622]:
+              - heading "Weight" [level=2] [ref=f4e2623]
+              - list "Weight" [ref=f4e2624]:
+                - listitem [ref=f4e2625]:
+                  - link "Apply the filter Up to 141.9 g to narrow results" [ref=f4e2627] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003491669111%3A42659590031&dc&qid=1789618401&rnid=42659587031&ref=sr_nr_p_n_g-1003491669111_1&ds=v1%3AIjKnTS0n5LwTzvZZZjCWQdFZqb5T8z0x%2FpH1mkZKc7k
+                    - checkbox [ref=f4e2630]
+                    - text: Up to 141.9 g
+                - listitem [ref=f4e2632]:
+                  - link "Apply the filter 142 to 197.9 g to narrow results" [ref=f4e2634] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003491669111%3A42659588031&dc&qid=1789618401&rnid=42659587031&ref=sr_nr_p_n_g-1003491669111_2&ds=v1%3Au%2FlE73r94YQwLP5NQ%2B9WF69AkYBou52KA6Ey76Sumck
+                    - checkbox [ref=f4e2637]
+                    - text: 142 to 197.9 g
+                - listitem [ref=f4e2639]:
+                  - link "Apply the filter 198 to 254.9 g to narrow results" [ref=f4e2641] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003491669111%3A42659589031&dc&qid=1789618401&rnid=42659587031&ref=sr_nr_p_n_g-1003491669111_3&ds=v1%3AvyWr5grtwC4znHhQ03Xk2mNqcEBWX3jXKDRpwUdOjLI
+                    - checkbox [ref=f4e2644]
+                    - text: 198 to 254.9 g
+            - group [ref=f4e2646]:
+              - heading "Sim Card Size" [level=2] [ref=f4e2647]
+              - list "Sim Card Size" [ref=f4e2648]:
+                - listitem [ref=f4e2649]:
+                  - link "Apply the filter Nano to narrow results" [ref=f4e2651] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1002989370111%3A27179455031&dc&qid=1789618401&rnid=27179438031&ref=sr_nr_p_n_g-1002989370111_1&ds=v1%3A%2BuraJRE%2Bw4Z4Vs7HAWNjtg6AYB1iu9P8RmVODMazw%2BE
+                    - checkbox [ref=f4e2654]
+                    - text: Nano
+            - group [ref=f4e2656]:
+              - heading "GPS Navigation" [level=2] [ref=f4e2657]
+              - list "GPS Navigation" [ref=f4e2658]:
+                - listitem [ref=f4e2659]:
+                  - link "Apply the filter True to narrow results" [ref=f4e2661] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101015364874111%3A96329643031&dc&qid=1789618401&rnid=96329629031&ref=sr_nr_p_n_g-101015364874111_1&ds=v1%3AkZI0ycDAun0O1II2u8%2Bzb%2BVFjXkNa3g6e9z6TOcADZY
+                    - checkbox [ref=f4e2664]
+                    - text: "True"
+            - group [ref=f4e2666]:
+              - heading "Flash" [level=2] [ref=f4e2667]
+              - list "Flash" [ref=f4e2668]:
+                - listitem [ref=f4e2669]:
+                  - link "Apply the filter LED to narrow results" [ref=f4e2671] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101015500208111%3A100427321031&dc&qid=1789618401&rnid=100427311031&ref=sr_nr_p_n_g-101015500208111_1&ds=v1%3ATKlOAWJ2sWB3DaV3k36CuyOPqesWKFu2fwszyoDKxTQ
+                    - checkbox [ref=f4e2674]
+                    - text: LED
+            - group [ref=f4e2676]:
+              - heading "Country of Origin" [level=2] [ref=f4e2677]
+              - list "Country of Origin" [ref=f4e2678]:
+                - listitem [ref=f4e2679]:
+                  - link "Apply the filter India to narrow results" [ref=f4e2681] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_country_of_origin-bin%3AIN&dc&qid=1789618401&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_1&ds=v1%3AQRugVe86YrBfLaxggUzpi0oZCpTLC6y%2BuaDmQJxFFW8
+                    - checkbox [ref=f4e2684]
+                    - text: India
+            - group [ref=f4e2686]:
+              - heading "Input" [level=2] [ref=f4e2687]
+              - list "Input" [ref=f4e2688]:
+                - listitem [ref=f4e2689]:
+                  - link "Apply the filter Touchscreen to narrow results" [ref=f4e2691] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1002097072111%3A27362061031&dc&qid=1789618401&rnid=27362059031&ref=sr_nr_p_n_g-1002097072111_1&ds=v1%3ANr%2BFvIoVFCYIjb6TrfeAhKxzxacc6lrFITsVR4amE2U
+                    - checkbox [ref=f4e2694]
+                    - text: Touchscreen
+                - listitem [ref=f4e2696]:
+                  - link "Apply the filter Touchscreen with Stylus Support to narrow results" [ref=f4e2698] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1002097072111%3A27362074031&dc&qid=1789618401&rnid=27362059031&ref=sr_nr_p_n_g-1002097072111_2&ds=v1%3A230nfLZJHOmOAsXcQ%2Bnz0DphuwqQsGEsWWELZtQezuo
+                    - checkbox [ref=f4e2701]
+                    - text: Touchscreen with Stylus Support
+            - group [ref=f4e2703]:
+              - heading "Rear Camera Photo Sensor Resolution" [level=2] [ref=f4e2704]
+              - list "Rear Camera Photo Sensor Resolution" [ref=f4e2705]:
+                - listitem [ref=f4e2706]:
+                  - link "Apply the filter Up to 9.9 MP to narrow results" [ref=f4e2708] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003477899111%3A42253779031&dc&qid=1789618401&rnid=42253749031&ref=sr_nr_p_n_g-1003477899111_1&ds=v1%3ABzFDpe%2BeCt0jjgH6%2FGF%2BVhZcRIWMomlZCPekInz1oPI
+                    - checkbox [ref=f4e2711]
+                    - text: Up to 9.9 MP
+                - listitem [ref=f4e2713]:
+                  - link "Apply the filter 10 to 12.9 MP to narrow results" [ref=f4e2715] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003477899111%3A42253777031&dc&qid=1789618401&rnid=42253749031&ref=sr_nr_p_n_g-1003477899111_2&ds=v1%3AEgJ1qID2taB6%2FoK4Piqm8N32gIMmuULGBZc8TbtNHw0
+                    - checkbox [ref=f4e2718]
+                    - text: 10 to 12.9 MP
+                - listitem [ref=f4e2720]:
+                  - link "Apply the filter 16 MP & Above to narrow results" [ref=f4e2722] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003477899111%3A42253778031&dc&qid=1789618401&rnid=42253749031&ref=sr_nr_p_n_g-1003477899111_3&ds=v1%3ANAZYkUcvrbklcHPddrCPGwmwBJmzmt36pVUL7FbhkK0
+                    - checkbox [ref=f4e2725]
+                    - text: 16 MP & Above
+            - group [ref=f4e2727]:
+              - heading "Supported Satellite Navigation System" [level=2] [ref=f4e2728]
+              - list "Supported Satellite Navigation System" [ref=f4e2729]:
+                - listitem [ref=f4e2730]:
+                  - link "Apply the filter GPS to narrow results" [ref=f4e2732] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101015498432111%3A100424905031&dc&qid=1789618401&rnid=100424895031&ref=sr_nr_p_n_g-101015498432111_1&ds=v1%3AlgXXKuJ0bbuwPaCqw7WTGbBU1sN4bzLMuDXy2isFs90
+                    - checkbox [ref=f4e2735]
+                    - text: GPS
+                - listitem [ref=f4e2737]:
+                  - link "Apply the filter BeiDou to narrow results" [ref=f4e2739] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101015498432111%3A100424900031&dc&qid=1789618401&rnid=100424895031&ref=sr_nr_p_n_g-101015498432111_2&ds=v1%3Ae8j4%2FkR8AD4DuljL5HXa%2Fl2biqsAgTbltedCwIE5P3E
+                    - checkbox [ref=f4e2742]
+                    - text: BeiDou
+                - listitem [ref=f4e2744]:
+                  - link "Apply the filter GLONASS to narrow results" [ref=f4e2746] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101015498432111%3A100424903031&dc&qid=1789618401&rnid=100424895031&ref=sr_nr_p_n_g-101015498432111_3&ds=v1%3ACgYH93jwg%2FzuvEJipgh5QFY6eM3mnY%2Bgi0%2FtCQfDmUs
+                    - checkbox [ref=f4e2749]
+                    - text: GLONASS
+                - listitem [ref=f4e2751]:
+                  - link "Apply the filter Galileo to narrow results" [ref=f4e2753] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101015498432111%3A100424904031&dc&qid=1789618401&rnid=100424895031&ref=sr_nr_p_n_g-101015498432111_4&ds=v1%3Aae%2B34j7fo%2B1eBmXRJnXoK8soWOjxmtjNAdOxBBBEo70
+                    - checkbox [ref=f4e2756]
+                    - text: Galileo
+            - group [ref=f4e2758]:
+              - heading "New Arrivals" [level=2] [ref=f4e2759]
+              - list "New Arrivals" [ref=f4e2760]:
+                - listitem [ref=f4e2761]:
+                  - link "Last 30 days" [ref=f4e2763] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_date_first_available_absolute%3A1318487031&dc&qid=1789618401&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_1&ds=v1%3AvxlTEXJowE%2Bighzgtt3O5FenM96hC2fDrjV2cDdp%2FLA
+                - listitem [ref=f4e2764]:
+                  - link "Last 90 days" [ref=f4e2766] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_date_first_available_absolute%3A1318488031&dc&qid=1789618401&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_2&ds=v1%3AktLEGTQfzHMn3Dr%2B%2BAcyH0en5Uy9cTM2fvVT4Dn8Ik8
+            - group [ref=f4e2767]:
+              - heading "Aspect Ratio" [level=2] [ref=f4e2768]
+              - list "Aspect Ratio" [ref=f4e2769]:
+                - listitem [ref=f4e2770]:
+                  - link "Apply the filter 16:9 to narrow results" [ref=f4e2772] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101015688486111%3A204879948031&dc&qid=1789618401&rnid=204879945031&ref=sr_nr_p_n_g-101015688486111_1&ds=v1%3AXFxDHjl3DAK8Ys8MKTj1gHoZRM%2FvXfh%2FHEiGhK1mLGw
+                    - checkbox [ref=f4e2775]
+                    - text: 16:9
+            - group [ref=f4e2777]:
+              - heading "Battery Type" [level=2] [ref=f4e2778]
+              - list "Battery Type" [ref=f4e2779]:
+                - listitem [ref=f4e2780]:
+                  - link "Apply the filter Lithium-Ion to narrow results" [ref=f4e2782] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101015500034111%3A100427319031&dc&qid=1789618401&rnid=100427310031&ref=sr_nr_p_n_g-101015500034111_1&ds=v1%3AQDL9CPnlpI%2BtIjnOxDh5YYeVfJUw5I0UJC1arvQ27f8
+                    - checkbox [ref=f4e2785]
+                    - text: Lithium-Ion
+            - group [ref=f4e2787]:
+              - heading "Front Camera Resolution" [level=2] [ref=f4e2788]
+              - list "Front Camera Resolution" [ref=f4e2789]:
+                - listitem [ref=f4e2790]:
+                  - link "Apply the filter 10.0 to 12.9 MP to narrow results" [ref=f4e2792] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003565058111%3A61505199031&dc&qid=1789618401&rnid=61505195031&ref=sr_nr_p_n_g-1003565058111_1&ds=v1%3Agkmq6XsMTP8r%2F011lC%2ByxLt4%2FdVT7oDoXktuvmEvi5I
+                    - checkbox [ref=f4e2795]
+                    - text: 10.0 to 12.9 MP
+                - listitem [ref=f4e2797]:
+                  - link "Apply the filter 13.0 MP & above to narrow results" [ref=f4e2799] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003565058111%3A61505197031&dc&qid=1789618401&rnid=61505195031&ref=sr_nr_p_n_g-1003565058111_2&ds=v1%3AjoDTvXi16mPEPkPwpQOT4Ap0ZbPO2vEAbxQUpw%2BgMRI
+                    - checkbox [ref=f4e2802]
+                    - text: 13.0 MP & above
+            - group [ref=f4e2804]:
+              - heading "Purpose" [level=2] [ref=f4e2805]
+              - list "Purpose" [ref=f4e2806]:
+                - listitem [ref=f4e2807]:
+                  - link "Apply the filter Gaming to narrow results" [ref=f4e2809] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101016756045111%3A207854436031&dc&qid=1789618401&rnid=207854435031&ref=sr_nr_p_n_g-101016756045111_1&ds=v1%3AQCu3CVduekYPLQtnQ1%2FbuHUemBrvxOUbE5pWu5bFERs
+                    - checkbox [ref=f4e2812]
+                    - text: Gaming
+                - listitem [ref=f4e2814]:
+                  - link "Apply the filter Photography to narrow results" [ref=f4e2816] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101016756045111%3A207854437031&dc&qid=1789618401&rnid=207854435031&ref=sr_nr_p_n_g-101016756045111_2&ds=v1%3A%2F1FVPU%2BvnqYx%2BM2%2BxmBEYWUUlo98kickLIMnGe0fHTo
+                    - checkbox [ref=f4e2819]
+                    - text: Photography
+                - listitem [ref=f4e2821]:
+                  - link "Apply the filter Streaming to narrow results" [ref=f4e2823] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101016756045111%3A207854438031&dc&qid=1789618401&rnid=207854435031&ref=sr_nr_p_n_g-101016756045111_3&ds=v1%3AQWB9m4B0vOZXzh8jUT0yX4YU6bm%2Fsk95DCE6e5Mkpws
+                    - checkbox [ref=f4e2826]
+                    - text: Streaming
+                - listitem [ref=f4e2828]:
+                  - link "Apply the filter Video Conferencing to narrow results" [ref=f4e2830] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101016756045111%3A207854439031&dc&qid=1789618401&rnid=207854435031&ref=sr_nr_p_n_g-101016756045111_4&ds=v1%3AYXKQuJTS1Yuhv%2B3hUI7uDeK60s9z7tiVOkQnLmA7N%2Bo
+                    - checkbox [ref=f4e2833]
+                    - text: Video Conferencing
+            - group [ref=f4e2835]:
+              - heading "Display Resolution" [level=2] [ref=f4e2836]
+              - list "Display Resolution" [ref=f4e2837]:
+                - listitem [ref=f4e2838]:
+                  - link "Apply the filter 1280 x 720 to narrow results" [ref=f4e2840] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1002090229111%3A27345189031&dc&qid=1789618401&rnid=27345181031&ref=sr_nr_p_n_g-1002090229111_1&ds=v1%3AptTn%2B5YCVv710kasXWxLg8MP7sq%2BW%2FbexT%2FtIxlAWrI
+                    - checkbox [ref=f4e2843]
+                    - text: 1280 x 720
+                - listitem [ref=f4e2845]:
+                  - link "Apply the filter 2340 x 1080 to narrow results" [ref=f4e2847] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1002090229111%3A27345192031&dc&qid=1789618401&rnid=27345181031&ref=sr_nr_p_n_g-1002090229111_2&ds=v1%3AT5GU7M%2FNDKW9bi5JJUv5eTW6LK%2FsLD2C3IXJiHcV60k
+                    - checkbox [ref=f4e2850]
+                    - text: 2340 x 1080
+                - listitem [ref=f4e2852]:
+                  - link "Apply the filter 3120 x 1440 to narrow results" [ref=f4e2854] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1002090229111%3A27345243031&dc&qid=1789618401&rnid=27345181031&ref=sr_nr_p_n_g-1002090229111_3&ds=v1%3A%2FpvZtYEN1Q4JEw6I%2BCk3LV%2Fw%2BdDVUk3nZqc1%2Fs7oq%2BY
+                    - checkbox [ref=f4e2857]
+                    - text: 3120 x 1440
+            - group [ref=f4e2859]:
+              - heading "Included Components" [level=2] [ref=f4e2860]
+              - list "Included Components" [ref=f4e2861]:
+                - listitem [ref=f4e2862]:
+                  - link "Apply the filter Quick Start Guide to narrow results" [ref=f4e2864] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101013594324111%3A213480632031&dc&qid=1789618401&rnid=66008593031&ref=sr_nr_p_n_g-101013594324111_1&ds=v1%3A1uBXhw1P5oNJlFRjtnFdsPEOzFR4ebVl85wau1IT4gw
+                    - checkbox [ref=f4e2867]
+                    - text: Quick Start Guide
+            - group [ref=f4e2869]:
+              - heading "Security Feature" [level=2] [ref=f4e2870]
+              - list "Security Feature" [ref=f4e2871]:
+                - listitem [ref=f4e2872]:
+                  - link "Apply the filter Fingerprint Recognition to narrow results" [ref=f4e2874] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1002085472111%3A27355812031&dc&qid=1789618401&rnid=27355796031&ref=sr_nr_p_n_g-1002085472111_1&ds=v1%3Aq%2B9G%2BSlwlz5MkKk%2F%2BZpmn5Wb%2F%2FrP4Ih%2FOKnd7Px%2F5gU
+                    - checkbox [ref=f4e2877]
+                    - text: Fingerprint Recognition
+            - group [ref=f4e2879]:
+              - heading "GenAI Model" [level=2] [ref=f4e2880]
+              - list "GenAI Model" [ref=f4e2881]:
+                - listitem [ref=f4e2882]:
+                  - link "Apply the filter Galaxy AI to narrow results" [ref=f4e2884] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101016978070111%3A211735166031&dc&qid=1789618401&rnid=211735163031&ref=sr_nr_p_n_g-101016978070111_1&ds=v1%3AyvQK7Tq9cK9r01NHSphe43c8fZNtnSc1BG1VCgSB%2Ffw
+                    - checkbox [ref=f4e2887]
+                    - text: Galaxy AI
+            - group [ref=f4e2889]:
+              - heading "Display Refresh Rate in Hertz" [level=2] [ref=f4e2890]
+              - list "Display Refresh Rate in Hertz" [ref=f4e2891]:
+                - listitem [ref=f4e2892]:
+                  - link "Apply the filter 120 to narrow results" [ref=f4e2894] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101017397158111%3A214852071031&dc&qid=1789618401&rnid=214852064031&ref=sr_nr_p_n_g-101017397158111_1&ds=v1%3A9UVX7VKTJPINjy9gSkSA48o5ib6ZZRt0lTHMLNLbX08
+                    - checkbox [ref=f4e2897]
+                    - text: "120"
+            - group [ref=f4e2899]:
+              - heading "Battery Life" [level=2] [ref=f4e2900]
+              - list "Battery Life" [ref=f4e2901]:
+                - listitem [ref=f4e2902]:
+                  - link "Apply the filter 19 h & above to narrow results" [ref=f4e2904] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-1003486052111%3A42062130031&dc&qid=1789618401&rnid=42062008031&ref=sr_nr_p_n_g-1003486052111_1&ds=v1%3Ac%2FhFWSzp4WkSPbBrswkjGksgqFjklQeoXVwk%2FXbC4us
+                    - checkbox [ref=f4e2907]
+                    - text: 19 h & above
+            - group [ref=f4e2909]:
+              - heading "Camera Feature" [level=2] [ref=f4e2910]
+              - list "Camera Feature" [ref=f4e2911]:
+                - listitem [ref=f4e2912]:
+                  - link "Apply the filter AI Enhanced HDR to narrow results" [ref=f4e2914] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101017335955111%3A214313440031&dc&qid=1789618401&rnid=214313432031&ref=sr_nr_p_n_g-101017335955111_1&ds=v1%3AOhexwKPSyMOPOQh%2FUGpzoe8QroQVUaMiJJTHD0viRak
+                    - checkbox [ref=f4e2917]
+                    - text: AI Enhanced HDR
+                - listitem [ref=f4e2919]:
+                  - link "Apply the filter Object/Subject Tracking to narrow results" [ref=f4e2921] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101017335955111%3A214313434031&dc&qid=1789618401&rnid=214313432031&ref=sr_nr_p_n_g-101017335955111_2&ds=v1%3AzbfzmPU%2FH9WHCuKtZ8PYcgEEHIqSrEdCBra%2F8oxML7g
+                    - checkbox [ref=f4e2924]
+                    - text: Object/Subject Tracking
+                - listitem [ref=f4e2926]:
+                  - link "Apply the filter Portrait Enhancement to narrow results" [ref=f4e2928] [cursor=pointer]:
+                    - /url: /s?k=iphone+17+pro&rh=p_n_g-101017335955111%3A214313445031&dc&qid=1789618401&rnid=214313432031&ref=sr_nr_p_n_g-101017335955111_3&ds=v1%3ARvumqxrbqI5PhdxS7iMyX5i3o9rSB7oqrQmJ4Zuqu90
+                    - checkbox [ref=f4e2931]
+                    - text: Portrait Enhancement
+  - complementary "Your recently viewed items and featured recommendations"
+  - generic [ref=f4e2933]:
+    - button "Back to top" [ref=f4e2934] [cursor=pointer]
+    - generic [ref=f4e2936]:
+      - generic [ref=f4e2937]:
+        - heading "Get to Know Us" [level=6] [ref=f4e2938]
+        - list [ref=f4e2939]:
+          - listitem [ref=f4e2940]:
+            - link "About Amazon" [ref=f4e2941] [cursor=pointer]:
+              - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=f4e2942]:
+            - link "Careers" [ref=f4e2943] [cursor=pointer]:
+              - /url: https://amazon.jobs
+          - listitem [ref=f4e2944]:
+            - link "Press Releases" [ref=f4e2945] [cursor=pointer]:
+              - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=f4e2946]:
+            - link "Amazon Science" [ref=f4e2947] [cursor=pointer]:
+              - /url: https://www.amazon.science
+      - generic [ref=f4e2949]:
+        - heading "Connect with Us" [level=6] [ref=f4e2950]
+        - list [ref=f4e2951]:
+          - listitem [ref=f4e2952]:
+            - link "Facebook" [ref=f4e2953] [cursor=pointer]:
+              - /url: https://www.facebook.com/AmazonIN
+          - listitem [ref=f4e2954]:
+            - link "Twitter" [ref=f4e2955] [cursor=pointer]:
+              - /url: https://x.com/AmazonIN
+          - listitem [ref=f4e2956]:
+            - link "Instagram" [ref=f4e2957] [cursor=pointer]:
+              - /url: https://www.instagram.com/amazondotin
+      - generic [ref=f4e2959]:
+        - heading "Make Money with Us" [level=6] [ref=f4e2960]
+        - list [ref=f4e2961]:
+          - listitem [ref=f4e2962]:
+            - link "Sell on Amazon" [ref=f4e2963] [cursor=pointer]:
+              - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+          - listitem [ref=f4e2964]:
+            - link "Sell under Amazon Accelerator" [ref=f4e2965] [cursor=pointer]:
+              - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+          - listitem [ref=f4e2966]:
+            - link "Protect and Build Your Brand" [ref=f4e2967] [cursor=pointer]:
+              - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+          - listitem [ref=f4e2968]:
+            - link "Amazon Global Selling" [ref=f4e2969] [cursor=pointer]:
+              - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+          - listitem [ref=f4e2970]:
+            - link "Supply to Amazon" [ref=f4e2971] [cursor=pointer]:
+              - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+          - listitem [ref=f4e2972]:
+            - link "Become an Affiliate" [ref=f4e2973] [cursor=pointer]:
+              - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+          - listitem [ref=f4e2974]:
+            - link "Fulfilment by Amazon" [ref=f4e2975] [cursor=pointer]:
+              - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+          - listitem [ref=f4e2976]:
+            - link "Advertise Your Products" [ref=f4e2977] [cursor=pointer]:
+              - /url: https://advertising.amazon.in/?ref=Amz.in
+          - listitem [ref=f4e2978]:
+            - link "Amazon Pay on Merchants" [ref=f4e2979] [cursor=pointer]:
+              - /url: https://www.amazonpay.in/merchant
+      - generic [ref=f4e2981]:
+        - heading "Let Us Help You" [level=6] [ref=f4e2982]
+        - list [ref=f4e2983]:
+          - listitem [ref=f4e2984]:
+            - link "Your Account" [ref=f4e2985] [cursor=pointer]:
+              - /url: /gp/css/homepage.html?ref_=footer_ya
+          - listitem [ref=f4e2986]:
+            - link "Returns Centre" [ref=f4e2987] [cursor=pointer]:
+              - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+          - listitem [ref=f4e2988]:
+            - link "Recalls and Product Safety Alerts" [ref=f4e2989] [cursor=pointer]:
+              - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+          - listitem [ref=f4e2990]:
+            - link "100% Purchase Protection" [ref=f4e2991] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+          - listitem [ref=f4e2992]:
+            - link "Amazon App Download" [ref=f4e2993] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+          - listitem [ref=f4e2994]:
+            - link "Help" [ref=f4e2995] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+    - generic [ref=f4e2997]:
+      - link "Amazon India Home" [ref=f4e3000] [cursor=pointer]:
+        - /url: /ref=footer_logo
+      - generic [ref=f4e3003]:
+        - generic [ref=f4e3004]:
+          - link "Choose a language for shopping. Current selection is English." [ref=f4e3005] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+            - generic [ref=f4e3007]: English
+          - button "Expand to Change Language or Country" [ref=f4e3008] [cursor=pointer]
+        - button "Choose a country/region for shopping. The current selection is India." [ref=f4e3009] [cursor=pointer]:
+          - generic [ref=f4e3011]: India
+    - generic "More on Amazon" [ref=f4e3012]:
+      - generic "More on Amazon" [ref=f4e3013]:
+        - list [ref=f4e3014]:
+          - listitem [ref=f4e3015]:
+            - link [ref=f4e3016] [cursor=pointer]:
+              - /url: https://www.abebooks.com/
+              - heading "AbeBooks" [level=5] [ref=f4e3017]
+              - generic [ref=f4e3018]: Books, art& collectibles
+          - listitem [ref=f4e3019]
+          - listitem [ref=f4e3020]:
+            - link [ref=f4e3021] [cursor=pointer]:
+              - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+              - heading "Amazon Web Services" [level=5] [ref=f4e3022]
+              - generic [ref=f4e3023]: Scalable CloudComputing Services
+          - listitem [ref=f4e3024]
+          - listitem [ref=f4e3025]:
+            - link [ref=f4e3026] [cursor=pointer]:
+              - /url: https://www.audible.in/
+              - heading "Audible" [level=5] [ref=f4e3027]
+              - generic [ref=f4e3028]: DownloadAudio Books
+          - listitem [ref=f4e3029]
+          - listitem [ref=f4e3030]:
+            - link [ref=f4e3031] [cursor=pointer]:
+              - /url: https://www.imdb.com/
+              - heading "IMDb" [level=5] [ref=f4e3032]
+              - generic [ref=f4e3033]: Movies, TV& Celebrities
+        - list [ref=f4e3034]:
+          - listitem [ref=f4e3035]:
+            - link [ref=f4e3036] [cursor=pointer]:
+              - /url: https://www.shopbop.com/
+              - heading "Shopbop" [level=5] [ref=f4e3037]
+              - generic [ref=f4e3038]: DesignerFashion Brands
+          - listitem [ref=f4e3039]
+          - listitem [ref=f4e3040]:
+            - link [ref=f4e3041] [cursor=pointer]:
+              - /url: /business?ref=footer_aingw
+              - heading "Amazon Business" [level=5] [ref=f4e3042]
+              - generic [ref=f4e3043]: Everything ForYour Business
+          - listitem [ref=f4e3044]
+          - listitem [ref=f4e3045]:
+            - link "Amazon Music Stream millions of songs" [ref=f4e3046] [cursor=pointer]:
+              - /url: /music/player?ref=footer_apm
+              - heading "Amazon Music" [level=5] [ref=f4e3047]
+              - generic [ref=f4e3048]: Stream millions of songs
+          - listitem [ref=f4e3049]
+          - listitem [ref=f4e3050]
+    - generic [ref=f4e3051]:
+      - list [ref=f4e3052]:
+        - listitem [ref=f4e3053]:
+          - link "Conditions of Use & Sale" [ref=f4e3054] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+        - listitem [ref=f4e3055]:
+          - link "Privacy Notice" [ref=f4e3056] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+        - listitem [ref=f4e3057]:
+          - link "Interest-Based Ads" [ref=f4e3058] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+      - generic [ref=f4e3059]: © 1996-2026, Amazon.com, Inc. or its affiliates
+  - iframe [ref=f4e3061]:
+    - iframe [ref=f6e2]:
+      
+```
